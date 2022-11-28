@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Main Page</title>
+</head>
+
+<body id="body">
+    <div class="header-wrapper">
+        <div class="header container row-center jcsb">
+            <div class="header__contacts row-center">
+                <a href="tel:+375297333368" class="header__contacts-phone row-center link">
+                    <img src="img/index/icon-phone.svg" alt="Image" class="img24 img-default">
+                    <img src="img/index/icon-phone-hover.svg" alt="Image" class="img24 img-hover">
+                    <img src="img/index/icon-phone-active.svg" alt="Image" class="img24 img-active">
+                    <span class="font300 black">+375 29 7 3333 68 (MTC)</span>
+                </a>
+                <div class="header__contacts-clock row-center">
+                    <img src="img/index/icon-clock.svg" alt="Image" class="img24">
+                    <div class="font300 black">с 09:00 до 22:00, Без выходных</div>
+                </div>
+            </div>
+            <div class="header__links row-center">
+                <a href="#" class="font500 black link">Новинки</a>
+                <a href="#" class="font500 black link">Где купить</a>
+                <a href="#" class="font500 black link">Доставка и оплата</a>
+                <a href="#" class="font500 black link">Корпоративные подарки</a>
+                <a href="#" class="font500 black link">Стать нашим партнером</a>
+            </div>
+        </div>
+    </div>
+    <div class="subheader-wrapper">
+        <div class="subheader container row-center jcsb">
+            <div class="subheader__menu row-center">
+                <button type="button" class="subheader__menu-button row-center link" onclick="openMenu()">
+                    <img src="img/index/icon-menu.svg" alt="Image" width="22" height="22">
+                    <span class="font500 black">Каталог</span>
+                </button>
+                <a href="index.html">
+                    <img src="img/index/logo.svg" alt="Image" width="162" height="22">
+                </a>
+            </div>
+            <div class="subheader__menu-mobile row-center hidden">
+                <button type="button">
+                    <img src="img/index/icon-menu-mobile.svg" alt="Image" class="img24" onclick="openMenuMobile()">
+                </button>
+                <a href="index.html">
+                    <img src="img/index/logo-mobile.svg" alt="Image" width="32" height="26">
+                </a>
+            </div>
+            <div class="subheader__icons row-center">
+                <div class="subheader__icons-links row-center">
+                    <button type="button" id="subheader__icons-links-search-button" onclick="openSearch()">
+                        <img src="img/index/icon-search.svg" alt="Image" class="img24 img-default">
+                        <img src="img/index/icon-search-hover.svg" alt="Image" class="img24 img-hover">
+                        <img src="img/index/icon-search-active.svg" alt="Image" class="img24 img-active">
+                    </button>
+                    <div class="subheader__icons-links-search-field hidden" id="subheader__icons-links-search-field">
+                        <input type="text" name="n_subheader__icons-links-search-field-input"
+                            id="subheader__icons-links-search-field-input"
+                            class="subheader__icons-links-search-field-input font500 black" placeholder="Поиск...">
+                        <img src="img/index/icon-search.svg" alt="Image" class="img24">
+                        <img src="img/index/icon-search-hover.svg" alt="Image" class="img24 hidden"
+                            id="subheader__icons-links-search-field-img1">
+                        <img src="img/index/icon-search-active.svg" alt="Image" class="img24 hidden"
+                            id="subheader__icons-links-search-field-img2">
+                    </div>
+                    <a href="#">
+                        <img src="img/index/icon-user.svg" alt="Image" class="img24 img-default">
+                        <img src="img/index/icon-user-hover.svg" alt="Image" class="img24 img-hover">
+                        <img src="img/index/icon-user-active.svg" alt="Image" class="img24 img-active">
+                    </a>
+                    <a href="#">
+                        <img src="img/index/icon-favorite.svg" alt="Image" class="img24 img-default">
+                        <img src="img/index/icon-favorite-hover.svg" alt="Image" class="img24 img-hover">
+                        <img src="img/index/icon-favorite-active.svg" alt="Image" class="img24 img-active">
+                    </a>
+                    <a href="#" class="subheader__icons-links-bag">
+                        <img src="img/index/icon-bag.svg" alt="Image" class="img24 img-default">
+                        <img src="img/index/icon-bag-hover.svg" alt="Image" class="img24 img-hover">
+                        <img src="img/index/icon-bag-active.svg" alt="Image" class="img24 img-active">
+                        <div class="subheader__icons-links-bag-count font500 black">2</div>
+                    </a>
+                </div>
+                <a href="#" class="subheader__icons-button font500 white button-pink">Активировать сертификат</a>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="img/index/banner.png" alt="Image" class="banner__img">
+        <img src="img/index/banner-mobile.png" alt="Image" class="banner__img-mobile hidden">
+    </div>
+    <div class="filter container">
+        <div class="filter__bar row">
+            <input type="radio" name="n_filter__bar-button" id="filter__bar-button-1" checked
+                class="filter__bar-button-input hidden">
+            <label for="filter__bar-button-1" class="filter__bar-button-label-1 row-center link">
+                <img src="img/index/icon-present.svg" alt="Image" class="img24">
+                <img src="img/index/icon-present-hover.svg" alt="Image" class="img24 hidden">
+                <span class="font500 black">В подарок</span>
+            </label>
+            <input type="radio" name="n_filter__bar-button" id="filter__bar-button-2"
+                class="filter__bar-button-input hidden">
+            <label for="filter__bar-button-2" class="filter__bar-button-label-2 row-center link">
+                <img src="img/index/icon-user.svg" alt="Image" class="img24">
+                <img src="img/index/icon-user-hover.svg" alt="Image" class="img24 hidden">
+                <span class="font500 black">Для себя</span>
+            </label>
+        </div>
+        <div class="filter__forms row">
+            <div class="filter__forms-wrapper">
+                <button type="button" class="filter__forms-checkbox-1 row-center jcsb link" onclick="openForm1()"
+                    id="filter__forms-checkbox-1">
+                    <span class="font500 black">Минск</span>
+                    <img src="img/index/icon-dropdown.svg" alt="Image" class="img24 img-default">
+                    <img src="img/index/icon-dropdown-hover.svg" alt="Image" class="img24 img-hover">
+                    <img src="img/index/icon-dropdown-active.svg" alt="Image" class="img24 img-active">
+                    <img src="img/index/icon-dropup-hover.svg" alt="Image" class="img24 hidden">
+                </button>
+                <div class="filter__forms-dropmenu-1 col hidden" id="filter__forms-dropmenu-1">
+                    <input type="radio" name="n_filter__forms-dropmenu1" id="filter__forms-dropmenu1-item-1"
+                        class="hidden" checked>
+                    <label for="filter__forms-dropmenu1-item-1" class="font300 black link"
+                        onclick="form1Hide()">Минск</label>
+                    <input type="radio" name="n_filter__forms-dropmenu1" id="filter__forms-dropmenu1-item-2"
+                        class="hidden">
+                    <label for="filter__forms-dropmenu1-item-2" class="font300 black link"
+                        onclick="form1Hide()">Гродно</label>
+                </div>
+            </div>
+            <div class="filter__forms-wrapper">
+                <button type="button" class="filter__forms-checkbox-2 row-center jcsb link" onclick="openForm2()"
+                    id="filter__forms-checkbox-2">
+                    <span class="font500 black">Категория (<span>1</span>)</span>
+                    <img src="img/index/icon-dropdown.svg" alt="Image" class="img24 img-default">
+                    <img src="img/index/icon-dropdown-hover.svg" alt="Image" class="img24 img-hover">
+                    <img src="img/index/icon-dropdown-active.svg" alt="Image" class="img24 img-active">
+                    <img src="img/index/icon-dropup-hover.svg" alt="Image" class="img24 hidden">
+                </button>
+                <div class="filter__forms-dropmenu-2 col hidden" id="filter__forms-dropmenu-2">
+                    <div class="filter__forms-dropmenu-2-container row">
+                        <div class="filter__forms-dropmenu-2-container-item1 row">
+                            <div class="filter__forms-dropmenu-2-container-item1-col col">
+                                <input type="checkbox" name="n_filter__forms-dropmenu-2-checkbox1"
+                                    id="filter__forms-dropmenu-2-checkbox1"
+                                    class="filter__forms-dropmenu-2-checkbox-input hidden" checked>
+                                <label for="filter__forms-dropmenu-2-checkbox1"
+                                    class="filter__forms-dropmenu-2-checkbox row-center link">
+                                    <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                    <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                    <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                    <span class="font300 black">Спа, красота, здоровье</span>
+                                </label>
+                                <input type="checkbox" name="n_filter__forms-dropmenu-2-checkbox2"
+                                    id="filter__forms-dropmenu-2-checkbox2"
+                                    class="filter__forms-dropmenu-2-checkbox-input hidden">
+                                <label for="filter__forms-dropmenu-2-checkbox2"
+                                    class="filter__forms-dropmenu-2-checkbox row-center link">
+                                    <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                    <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                    <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                    <span class="font300 black">Полеты</span>
+                                </label>
+                                <input type="checkbox" name="n_filter__forms-dropmenu-2-checkbox3"
+                                    id="filter__forms-dropmenu-2-checkbox3"
+                                    class="filter__forms-dropmenu-2-checkbox-input hidden">
+                                <label for="filter__forms-dropmenu-2-checkbox3"
+                                    class="filter__forms-dropmenu-2-checkbox row-center link">
+                                    <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                    <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                    <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                    <span class="font300 black">Бары и рестораны</span>
+                                </label>
+                                <input type="checkbox" name="n_filter__forms-dropmenu-2-checkbox4"
+                                    id="filter__forms-dropmenu-2-checkbox4"
+                                    class="filter__forms-dropmenu-2-checkbox-input hidden">
+                                <label for="filter__forms-dropmenu-2-checkbox4"
+                                    class="filter__forms-dropmenu-2-checkbox row-center link">
+                                    <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                    <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                    <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                    <span class="font300 black">Романтические подарки</span>
+                                </label>
+                                <input type="checkbox" name="n_filter__forms-dropmenu-2-checkbox5"
+                                    id="filter__forms-dropmenu-2-checkbox5"
+                                    class="filter__forms-dropmenu-2-checkbox-input hidden">
+                                <label for="filter__forms-dropmenu-2-checkbox5"
+                                    class="filter__forms-dropmenu-2-checkbox row-center link">
+                                    <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                    <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                    <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                    <span class="font300 black">Мастер-классы и обучение</span>
+                                </label>
+                                <input type="checkbox" name="n_filter__forms-dropmenu-2-checkbox6"
+                                    id="filter__forms-dropmenu-2-checkbox6"
+                                    class="filter__forms-dropmenu-2-checkbox-input hidden">
+                                <label for="filter__forms-dropmenu-2-checkbox6"
+                                    class="filter__forms-dropmenu-2-checkbox row-center link">
+                                    <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                    <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                    <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                    <span class="font300 black">Подарочные карты магазинов</span>
+                                </label>
+                            </div>
+                            <div class="filter__forms-dropmenu-2-container-item1-col col">
+                                <input type="checkbox" name="n_filter__forms-dropmenu-2-checkbox7"
+                                    id="filter__forms-dropmenu-2-checkbox7"
+                                    class="filter__forms-dropmenu-2-checkbox-input hidden">
+                                <label for="filter__forms-dropmenu-2-checkbox7"
+                                    class="filter__forms-dropmenu-2-checkbox row-center link">
+                                    <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                    <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                    <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                    <span class="font300 black">Свидания и вечеринки</span>
+                                </label>
+                                <input type="checkbox" name="n_filter__forms-dropmenu-2-checkbox8"
+                                    id="filter__forms-dropmenu-2-checkbox8"
+                                    class="filter__forms-dropmenu-2-checkbox-input hidden">
+                                <label for="filter__forms-dropmenu-2-checkbox8"
+                                    class="filter__forms-dropmenu-2-checkbox row-center link">
+                                    <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                    <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                    <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                    <span class="font300 black">Квесты</span>
+                                </label>
+                                <input type="checkbox" name="n_filter__forms-dropmenu-2-checkbox9"
+                                    id="filter__forms-dropmenu-2-checkbox9"
+                                    class="filter__forms-dropmenu-2-checkbox-input hidden">
+                                <label for="filter__forms-dropmenu-2-checkbox9"
+                                    class="filter__forms-dropmenu-2-checkbox row-center link">
+                                    <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                    <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                    <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                    <span class="font300 black">Квесты</span>
+                                </label>
+                                <input type="checkbox" name="n_filter__forms-dropmenu-2-checkbox10"
+                                    id="filter__forms-dropmenu-2-checkbox10"
+                                    class="filter__forms-dropmenu-2-checkbox-input hidden">
+                                <label for="filter__forms-dropmenu-2-checkbox10"
+                                    class="filter__forms-dropmenu-2-checkbox row-center link">
+                                    <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                    <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                    <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                    <span class="font300 black">Активный отдых</span>
+                                </label>
+                                <input type="checkbox" name="n_filter__forms-dropmenu-2-checkbox11"
+                                    id="filter__forms-dropmenu-2-checkbox11"
+                                    class="filter__forms-dropmenu-2-checkbox-input hidden">
+                                <label for="filter__forms-dropmenu-2-checkbox11"
+                                    class="filter__forms-dropmenu-2-checkbox row-center link">
+                                    <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                    <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                    <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                    <span class="font300 black">На День Рождения</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter__forms-dropmenu-2-container-line"></div>
+                        <div class="filter__forms-dropmenu-2-container-item2 col">
+                            <input type="checkbox" name="n_filter__forms-dropmenu-2-checkbox12"
+                                id="filter__forms-dropmenu-2-checkbox12"
+                                class="filter__forms-dropmenu-2-checkbox-input2 hidden">
+                            <label for="filter__forms-dropmenu-2-checkbox12" class="col link">
+                                <span class="filter__forms-dropmenu-2-checkbox row-center">
+                                    <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                    <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                    <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                    <span class="font500 black">Универсальный сертификат</span>
+                                </span>
+                                <span class="font300 grey">Сертификат на сумму</span>
+                            </label>
+                            <input type="checkbox" name="n_filter__forms-dropmenu-2-checkbox13"
+                                id="filter__forms-dropmenu-2-checkbox13"
+                                class="filter__forms-dropmenu-2-checkbox-input2 hidden">
+                            <label for="filter__forms-dropmenu-2-checkbox13" class="col link">
+                                <span class="filter__forms-dropmenu-2-checkbox row-center">
+                                    <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                    <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                    <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                    <span class="font500 black">Комбо</span>
+                                </span>
+                                <span class="font300 grey">2 впечатления в 1</span>
+                            </label>
+                            <input type="checkbox" name="n_filter__forms-dropmenu-2-checkbox14"
+                                id="filter__forms-dropmenu-2-checkbox14"
+                                class="filter__forms-dropmenu-2-checkbox-input2 hidden">
+                            <label for="filter__forms-dropmenu-2-checkbox14" class="col link">
+                                <span class="filter__forms-dropmenu-2-checkbox row-center">
+                                    <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                    <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                    <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                    <span class="font500 black">Наборы</span>
+                                </span>
+                                <span class="font300 grey">Сертификат на выбор</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="button" class="filter__forms-dropmenu-2-clean row-center link-green"
+                        onclick="form2Clean()">
+                        <img src="img/index/icon-clean.svg" alt="Image" class="img24 img-default">
+                        <img src="img/index/icon-clean-hover.svg" alt="Image" class="img24 img-hover">
+                        <img src="img/index/icon-clean-active.svg" alt="Image" class="img24 img-active">
+                        <span class="font500 green">Сбросить</span>
+                    </button>
+                </div>
+            </div>
+            <div class="filter__forms-wrapper">
+                <button type="button" class="filter__forms-checkbox-3 row-center jcsb link" onclick="openForm3()"
+                    id="filter__forms-checkbox-3">
+                    <span class="font500 black">Кому (<span>2</span>)</span>
+                    <img src="img/index/icon-dropdown.svg" alt="Image" class="img24 img-default">
+                    <img src="img/index/icon-dropdown-hover.svg" alt="Image" class="img24 img-hover">
+                    <img src="img/index/icon-dropdown-active.svg" alt="Image" class="img24 img-active">
+                    <img src="img/index/icon-dropup-hover.svg" alt="Image" class="img24 hidden">
+                </button>
+                <div class="filter__forms-dropmenu-3 col hidden" id="filter__forms-dropmenu-3">
+                    <div class="filter__forms-dropmenu-3-container row">
+                        <div class="filter__forms-dropmenu-3-container-col1 col">
+                            <input type="checkbox" name="n_filter__forms-dropmenu-3-checkbox1"
+                                id="filter__forms-dropmenu-3-checkbox1"
+                                class="filter__forms-dropmenu-2-checkbox-input hidden">
+                            <label for="filter__forms-dropmenu-3-checkbox1"
+                                class="filter__forms-dropmenu-2-checkbox row-center link">
+                                <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                <span class="font300 black">Для нее</span>
+                            </label>
+                            <input type="checkbox" name="n_filter__forms-dropmenu-3-checkbox2"
+                                id="filter__forms-dropmenu-3-checkbox2"
+                                class="filter__forms-dropmenu-2-checkbox-input hidden">
+                            <label for="filter__forms-dropmenu-3-checkbox2"
+                                class="filter__forms-dropmenu-2-checkbox row-center link">
+                                <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                <span class="font300 black">Для него</span>
+                            </label>
+                            <input type="checkbox" name="n_filter__forms-dropmenu-3-checkbox3"
+                                id="filter__forms-dropmenu-3-checkbox3"
+                                class="filter__forms-dropmenu-2-checkbox-input hidden">
+                            <label for="filter__forms-dropmenu-3-checkbox3"
+                                class="filter__forms-dropmenu-2-checkbox row-center link">
+                                <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                <span class="font300 black">Детям</span>
+                            </label>
+                        </div>
+                        <div class="filter__forms-dropmenu-3-container-col2 col">
+                            <input type="checkbox" name="n_filter__forms-dropmenu-3-checkbox4"
+                                id="filter__forms-dropmenu-3-checkbox4"
+                                class="filter__forms-dropmenu-2-checkbox-input hidden">
+                            <label for="filter__forms-dropmenu-3-checkbox4"
+                                class="filter__forms-dropmenu-2-checkbox row-center link">
+                                <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                <span class="font300 black">На двоих</span>
+                            </label>
+                            <input type="checkbox" name="n_filter__forms-dropmenu-3-checkbox5"
+                                id="filter__forms-dropmenu-3-checkbox5"
+                                class="filter__forms-dropmenu-2-checkbox-input hidden">
+                            <label for="filter__forms-dropmenu-3-checkbox5"
+                                class="filter__forms-dropmenu-2-checkbox row-center link">
+                                <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                <span class="font300 black">Для компании</span>
+                            </label>
+                            <input type="checkbox" name="n_filter__forms-dropmenu-3-checkbox6"
+                                id="filter__forms-dropmenu-3-checkbox6"
+                                class="filter__forms-dropmenu-2-checkbox-input hidden">
+                            <label for="filter__forms-dropmenu-3-checkbox6"
+                                class="filter__forms-dropmenu-2-checkbox row-center link">
+                                <img src="img/index/icon-checkbox-default.svg" alt="Image" class="img24">
+                                <img src="img/index/icon-checkbox-hover.svg" alt="Image" class="img24 hidden">
+                                <img src="img/index/icon-checkbox-checked.svg" alt="Image" class="img24 hidden">
+                                <span class="font300 black">Семье</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="button" class="filter__forms-dropmenu-2-clean row-center link-green"
+                        onclick="form3Clean()">
+                        <img src="img/index/icon-clean.svg" alt="Image" class="img24 img-default">
+                        <img src="img/index/icon-clean-hover.svg" alt="Image" class="img24 img-hover">
+                        <img src="img/index/icon-clean-active.svg" alt="Image" class="img24 img-active">
+                        <span class="font500 green">Сбросить</span>
+                    </button>
+                </div>
+            </div>
+            <div class="filter__forms-wrapper">
+                <button type="button" class="filter__forms-checkbox-4 row-center jcsb link" onclick="openForm4()"
+                    id="filter__forms-checkbox-4">
+                    <span class="font500 black">Цена: От <span>10</span> до <span>3000</span></span>
+                    <img src="img/index/icon-dropdown.svg" alt="Image" class="img24 img-default">
+                    <img src="img/index/icon-dropdown-hover.svg" alt="Image" class="img24 img-hover">
+                    <img src="img/index/icon-dropdown-active.svg" alt="Image" class="img24 img-active">
+                    <img src="img/index/icon-dropup-hover.svg" alt="Image" class="img24 hidden">
+                </button>
+                <div class="filter__forms-dropmenu-4 col hidden" id="filter__forms-dropmenu-4">
+                    <div class="filter__forms-dropmenu-4-container row">
+                        <div class="filter__forms-dropmenu-4-container-col col">
+                            <div class="font500 black">От</div>
+                            <div class="filter__forms-dropmenu-4-container-col-input">
+                                <input type="text" name="n_filter__forms-dropmenu-4-input-field-1"
+                                    id="filter__forms-dropmenu-4-input-field-1"
+                                    class="filter__forms-dropmenu-4-input-field font500 black" placeholder="0">
+                            </div>
+                        </div>
+                        <div class="filter__forms-dropmenu-4-container-col col">
+                            <div class="font500 black">До</div>
+                            <div class="filter__forms-dropmenu-4-container-col-input">
+                                <input type="text" name="n_filter__forms-dropmenu-4-input-field-2"
+                                    id="filter__forms-dropmenu-4-input-field-2"
+                                    class="filter__forms-dropmenu-4-input-field font500 black" placeholder="3000">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="filter__forms-dropmenu-2-clean row-center link-green"
+                        onclick="form4Clean()">
+                        <img src="img/index/icon-clean.svg" alt="Image" class="img24 img-default">
+                        <img src="img/index/icon-clean-hover.svg" alt="Image" class="img24 img-hover">
+                        <img src="img/index/icon-clean-active.svg" alt="Image" class="img24 img-active">
+                        <span class="font500 green">Сбросить</span>
+                    </button>
+                </div>
+            </div>
+            <div class="filter__forms-wrapper">
+                <button type="button" class="filter__forms-button font500 white" onclick="filterButton()">Подобрать
+                    сертификат</button>
+            </div>
+        </div>
+    </div>
+    <div class="main col">
+        <div class="main__block1 container row">
+            <div class="main__block1-box1 row">
+                <img src="img/index/block1-image1.svg" alt="Image">
+                <div class="main__block1-box-info col">
+                    <div class="main__block1-box-info-title font700 black">Нет наценок</div>
+                    <div class="font300 grey">Платите только за подарок - наши цены не
+                        отличаются от цен партнеров</div>
+                </div>
+            </div>
+            <div class="main__block1-box2 row">
+                <img src="img/index/block1-image2.svg" alt="Image">
+                <div class="main__block1-box-info col">
+                    <div class="main__block1-box-info-title font700 black">СМС напоминание</div>
+                    <div class="font300 grey">Если забудете использовать, напомним покупателю
+                        о сертификате за месяц до окончания срока действия</div>
+                </div>
+            </div>
+            <div class="main__block1-box3 row">
+                <img src="img/index/block1-image3.svg" alt="Image">
+                <div class="main__block1-box-info col">
+                    <div class="main__block1-box-info-title font700 black">Бесплатная замена</div>
+                    <div class="font300 grey">Бесплатно и без вопросов заменим впечатление на
+                        другое в рамках номинала сертификата</div>
+                </div>
+            </div>
+        </div>
+        <div class="main__block2 container col">
+            <div class="main__block2-title font500 black">Лучший подарок на празднике - ваш!</div>
+            <div class="main__block2-title-2 font500 black hidden">Как это работает</div>
+            <div class="main__block2-steps row">
+                <div class="main__block2-steps-item col">
+                    <div class="main__block2-steps-item-img row-center">
+                        <img src="img/index/block2-image1.svg" alt="Image" class="img56">
+                        <div class="main__block2-steps-item-line"></div>
+                    </div>
+                    <div class="main__block2-steps-item-title font700 black">Выбираем лучших</div>
+                    <div class="main__block2-steps-item-text font300 grey">Тщательно выбираем партнеров и услуги. Не
+                        работаем с кем попало, гарантируем качество своей репутацией</div>
+                </div>
+                <div class="main__block2-steps-item col">
+                    <div class="main__block2-steps-item-img row-center">
+                        <img src="img/index/block2-image2.svg" alt="Image" class="img56">
+                        <div class="main__block2-steps-item-line"></div>
+                    </div>
+                    <div class="main__block2-steps-item-title font700 black">Создаем уникальные впечатления</div>
+                    <div class="main__block2-steps-item-text font300 grey">Обожаешь пробовать новое? Каждую неделю
+                        разрабатываем новое уникальное впечатление</div>
+                </div>
+                <div class="main__block2-steps-item col">
+                    <div class="main__block2-steps-item-img row-center">
+                        <img src="img/index/block2-image3.svg" alt="Image" class="img56">
+                        <div class="main__block2-steps-item-line"></div>
+                    </div>
+                    <div class="main__block2-steps-item-title font700 black">Тестируем до начала продаж</div>
+                    <div class="main__block2-steps-item-text font300 grey">В каталоге нет услуг, которые бы не проверили
+                        до начала работы. Мы убедились - вам понравится!
+                    </div>
+                </div>
+                <div class="main__block2-steps-item-last col">
+                    <img src="img/index/block2-image4.svg" alt="Image" class="img56">
+                    <div class="main__block2-steps-item-title font700 black">Собираем честные отзывы</div>
+                    <div class="font300 grey">Удаляем из каталога услуги, которые не
+                        соответствуют уровню клиентского сервиса surprise</div>
+                </div>
+            </div>
+            <div class="scroll-opacity hidden"></div>
+        </div>
+        <div class="main__block3 container col">
+            <div class="main__block3-title font500 black">Избранные категории</div>
+            <div class="main__block3-categories row">
+                <a href="#" class="main__block3-categories-item col link">
+                    <img src="img/index/block3-image1.png" alt="Image">
+                    <span class="font500 black">Все сертификаты</span>
+                </a>
+                <a href="#" class="main__block3-categories-item col link">
+                    <img src="img/index/block3-image2.png" alt="Image">
+                    <span class="font500 black">Активный отдых</span>
+                </a>
+                <a href="#" class="main__block3-categories-item col link">
+                    <img src="img/index/block3-image3.png" alt="Image">
+                    <span class="font500 black">Подарки на День Рождения</span>
+                </a>
+                <a href="#" class="main__block3-categories-item col link">
+                    <img src="img/index/block3-image4.png" alt="Image">
+                    <span class="font500 black">СПА</span>
+                </a>
+                <a href="#" class="main__block3-categories-item col link">
+                    <img src="img/index/block3-image5.png" alt="Image">
+                    <span class="font500 black">Мастер классы и обучение</span>
+                </a>
+                <a href="#" class="main__block3-categories-item col link">
+                    <img src="img/index/block3-image6.png" alt="Image">
+                    <span class="font500 black">Полеты</span>
+                </a>
+                <a href="#" class="main__block3-categories-item col link">
+                    <img src="img/index/block3-image7.png" alt="Image">
+                    <span class="font500 black">Романтика для двоих</span>
+                </a>
+            </div>
+        </div>
+        <div class="main__block4 container col">
+            <div class="main__block4-title font500 black">Новинки</div>
+            <div class="main__block4-cards">
+                <div class="main__block4-cards-item col">
+                    <div class="main__block4-cards-item-image">
+                        <div>
+                            <img src="img/index/slider1.png" alt="Image" class="block4-card-slide1">
+                            <img src="img/index/slider2.png" alt="Image" class="block4-card-slide1 hidden">
+                            <img src="img/index/slider3.png" alt="Image" class="block4-card-slide1 hidden">
+                            <img src="img/index/slider4.png" alt="Image" class="block4-card-slide1 hidden">
+                            <img src="img/index/slider5.png" alt="Image" class="block4-card-slide1 hidden">
+                            <img src="img/index/slider6.png" alt="Image" class="block4-card-slide1 hidden">
+                            <img src="img/index/slider3.png" alt="Image" class="block4-card-slide1 hidden">
+                        </div>
+                        <input type="checkbox" name="n_main__block4-cards-item-image-favorite-1"
+                            id="main__block4-cards-item-image-favorite-1"
+                            class="main__block4-cards-item-image-favorite hidden">
+                        <label for="main__block4-cards-item-image-favorite-1">
+                            <img src="img/index/icon-favorite.svg" alt="Image" class="img24">
+                            <img src="img/index/icon-favorite-pink.svg" alt="Image" class="img24 hidden">
+                        </label>
+                        <button type="button" class="main__block4-cards-item-image-sl-left hidden"
+                            onclick="previousSlide1()">
+                            <img src="img/index/icon-slider-left.svg" alt="Image" class="img-default slider-left">
+                            <img src="img/index/icon-slider-left-hover.svg" alt="Image" class="img-hover slider-left">
+                            <img src="img/index/icon-slider-left-active.svg" alt="Image" class="img-active slider-left">
+                        </button>
+                        <button type="button" class="main__block4-cards-item-image-sl-right hidden"
+                            onclick="nextSlide1()">
+                            <img src="img/index/icon-slider-right.svg" alt="Image" class="img-default slider-right">
+                            <img src="img/index/icon-slider-right-hover.svg" alt="Image" class="img-hover slider-right">
+                            <img src="img/index/icon-slider-right-active.svg" alt="Image"
+                                class="img-active slider-right">
+                        </button>
+                        <div class="main__block4-cards-item-image-points row">
+                            <div class="block4-card-point1"></div>
+                            <div class="block4-card-point1"></div>
+                            <div class="block4-card-point1"></div>
+                            <div class="block4-card-point1"></div>
+                            <div class="block4-card-point1"></div>
+                            <div class="block4-card-point1"></div>
+                            <div class="block4-card-point1"></div>
+                        </div>
+                    </div>
+                    <div class="main__block4-cards-item-text col">
+                        <div class="font500 black">Комплексная мойка авто с нанесением кварцевого покрытия</div>
+                        <div class="main__block4-cards-item-rating-mobile row-center hidden">
+                            <div class="main__block4-cards-item-rating-stars row-center">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                            </div>
+                            <a href="#" class="font300 black">20 отзывов</a>
+                        </div>
+                        <div class="font300 grey">Сомелье поделится традициями бельгийского пивоварения и научит
+                            основным пивным стилям. Вечер дополнит сет закусок от ресторана, специально подобранных к
+                            каждому напитку</div>
+                    </div>
+                    <div class="row-center jcsb">
+                        <div class="main__block4-cards-item-rating-desktop row-center">
+                            <div class="main__block4-cards-item-rating-stars row-center">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                            </div>
+                            <a href="#" class="font300 black link">20 отзывов</a>
+                        </div>
+                        <div class="main__block4-cards-item-price row-center">
+                            <div class="font500 black">от</div>
+                            <span class="font700 black">59</span>
+                            <div class="font500 black">до</div>
+                            <span class="font700 black">118</span>
+                            <div class="font500 black">руб.</div>
+                        </div>
+                    </div>
+                    <div class="main__block4-cards-item-buttons row">
+                        <button type="button" class="button-yellow row-center">
+                            <img src="img/index/icon-user.svg" alt="Image" class="img24">
+                            <span class="font500 black">Для себя</span>
+                        </button>
+                        <button type="button" class="button-pink row-center">
+                            <img src="img/index/icon-present-white.svg" alt="Image" class="img24">
+                            <span class="font500 white">В подарок</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="main__block4-cards-item col">
+                    <div class="main__block4-cards-item-image">
+                        <div>
+                            <img src="img/index/slider2.png" alt="Image" class="block4-card-slide2">
+                            <img src="img/index/slider3.png" alt="Image" class="block4-card-slide2 hidden">
+                            <img src="img/index/slider4.png" alt="Image" class="block4-card-slide2 hidden">
+                            <img src="img/index/slider5.png" alt="Image" class="block4-card-slide2 hidden">
+                            <img src="img/index/slider6.png" alt="Image" class="block4-card-slide2 hidden">
+                            <img src="img/index/slider3.png" alt="Image" class="block4-card-slide2 hidden">
+                            <img src="img/index/slider1.png" alt="Image" class="block4-card-slide2 hidden">
+                        </div>
+                        <input type="checkbox" name="n_main__block4-cards-item-image-favorite-2"
+                            id="main__block4-cards-item-image-favorite-2"
+                            class="main__block4-cards-item-image-favorite hidden">
+                        <label for="main__block4-cards-item-image-favorite-2">
+                            <img src="img/index/icon-favorite.svg" alt="Image" class="img24">
+                            <img src="img/index/icon-favorite-pink.svg" alt="Image" class="img24 hidden">
+                        </label>
+                        <button type="button" class="main__block4-cards-item-image-sl-left hidden"
+                            onclick="previousSlide2()">
+                            <img src="img/index/icon-slider-left.svg" alt="Image" class="img-default slider-left">
+                            <img src="img/index/icon-slider-left-hover.svg" alt="Image" class="img-hover slider-left">
+                            <img src="img/index/icon-slider-left-active.svg" alt="Image" class="img-active slider-left">
+                        </button>
+                        <button type="button" class="main__block4-cards-item-image-sl-right hidden"
+                            onclick="nextSlide2()">
+                            <img src="img/index/icon-slider-right.svg" alt="Image" class="img-default slider-right">
+                            <img src="img/index/icon-slider-right-hover.svg" alt="Image" class="img-hover slider-right">
+                            <img src="img/index/icon-slider-right-active.svg" alt="Image"
+                                class="img-active slider-right">
+                        </button>
+                        <div class="main__block4-cards-item-image-points row">
+                            <div class="block4-card-point2"></div>
+                            <div class="block4-card-point2"></div>
+                            <div class="block4-card-point2"></div>
+                            <div class="block4-card-point2"></div>
+                            <div class="block4-card-point2"></div>
+                            <div class="block4-card-point2"></div>
+                            <div class="block4-card-point2"></div>
+                        </div>
+                    </div>
+                    <div class="main__block4-cards-item-text col">
+                        <div class="font500 black">Винный безлимит в ресторане Fridays</div>
+                        <div class="main__block4-cards-item-rating-mobile row-center hidden">
+                            <div class="main__block4-cards-item-rating-stars row-center">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                            </div>
+                            <a href="#" class="font300 black">20 отзывов</a>
+                        </div>
+                        <div class="font300 grey">Сомелье поделится традициями бельгийского пивоварения и научит
+                            основным пивным стилям. Вечер дополнит сет закусок от ресторана, специально подобранных к
+                            каждому напитку</div>
+                    </div>
+                    <div class="row-center jcsb">
+                        <div class="main__block4-cards-item-rating-desktop row-center">
+                            <div class="main__block4-cards-item-rating-stars row-center">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                            </div>
+                            <a href="#" class="font300 black link">20 отзывов</a>
+                        </div>
+                        <div class="main__block4-cards-item-price row-center">
+                            <div class="font500 black">от</div>
+                            <span class="font700 black">59</span>
+                            <div class="font500 black">до</div>
+                            <span class="font700 black">118</span>
+                            <div class="font500 black">руб.</div>
+                        </div>
+                    </div>
+                    <div class="main__block4-cards-item-buttons row">
+                        <button type="button" class="button-yellow row-center">
+                            <img src="img/index/icon-user.svg" alt="Image" class="img24">
+                            <span class="font500 black">Для себя</span>
+                        </button>
+                        <button type="button" class="button-pink row-center">
+                            <img src="img/index/icon-present-white.svg" alt="Image" class="img24">
+                            <span class="font500 white">В подарок</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="main__block4-cards-item col">
+                    <div class="main__block4-cards-item-image">
+                        <div>
+                            <img src="img/index/slider3.png" alt="Image" class="block4-card-slide3">
+                            <img src="img/index/slider4.png" alt="Image" class="block4-card-slide3 hidden">
+                            <img src="img/index/slider5.png" alt="Image" class="block4-card-slide3 hidden">
+                            <img src="img/index/slider6.png" alt="Image" class="block4-card-slide3 hidden">
+                            <img src="img/index/slider3.png" alt="Image" class="block4-card-slide3 hidden">
+                            <img src="img/index/slider1.png" alt="Image" class="block4-card-slide3 hidden">
+                            <img src="img/index/slider2.png" alt="Image" class="block4-card-slide3 hidden">
+                        </div>
+                        <input type="checkbox" name="n_main__block4-cards-item-image-favorite-3"
+                            id="main__block4-cards-item-image-favorite-3"
+                            class="main__block4-cards-item-image-favorite hidden">
+                        <label for="main__block4-cards-item-image-favorite-3">
+                            <img src="img/index/icon-favorite.svg" alt="Image" class="img24">
+                            <img src="img/index/icon-favorite-pink.svg" alt="Image" class="img24 hidden">
+                        </label>
+                        <button type="button" class="main__block4-cards-item-image-sl-left hidden"
+                            onclick="previousSlide3()">
+                            <img src="img/index/icon-slider-left.svg" alt="Image" class="img-default slider-left">
+                            <img src="img/index/icon-slider-left-hover.svg" alt="Image" class="img-hover slider-left">
+                            <img src="img/index/icon-slider-left-active.svg" alt="Image" class="img-active slider-left">
+                        </button>
+                        <button type="button" class="main__block4-cards-item-image-sl-right hidden"
+                            onclick="nextSlide3()">
+                            <img src="img/index/icon-slider-right.svg" alt="Image" class="img-default slider-right">
+                            <img src="img/index/icon-slider-right-hover.svg" alt="Image" class="img-hover slider-right">
+                            <img src="img/index/icon-slider-right-active.svg" alt="Image"
+                                class="img-active slider-right">
+                        </button>
+                        <div class="main__block4-cards-item-image-points row">
+                            <div class="block4-card-point3"></div>
+                            <div class="block4-card-point3"></div>
+                            <div class="block4-card-point3"></div>
+                            <div class="block4-card-point3"></div>
+                            <div class="block4-card-point3"></div>
+                            <div class="block4-card-point3"></div>
+                            <div class="block4-card-point3"></div>
+                        </div>
+                    </div>
+                    <div class="main__block4-cards-item-text col">
+                        <div class="font500 black">Винный безлимит в ресторане Fridays</div>
+                        <div class="main__block4-cards-item-rating-mobile row-center hidden">
+                            <div class="main__block4-cards-item-rating-stars row-center">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                            </div>
+                            <a href="#" class="font300 black">20 отзывов</a>
+                        </div>
+                        <div class="font300 grey">Сомелье поделится традициями бельгийского пивоварения и научит
+                            основным пивным стилям. Вечер дополнит сет закусок от ресторана, специально подобранных к
+                            каждому напитку</div>
+                    </div>
+                    <div class="row-center jcsb">
+                        <div class="main__block4-cards-item-rating-desktop row-center">
+                            <div class="main__block4-cards-item-rating-stars row-center">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                            </div>
+                            <a href="#" class="font300 black link">20 отзывов</a>
+                        </div>
+                        <div class="main__block4-cards-item-price row-center">
+                            <div class="font500 black">от</div>
+                            <span class="font700 black">59</span>
+                            <div class="font500 black">до</div>
+                            <span class="font700 black">118</span>
+                            <div class="font500 black">руб.</div>
+                        </div>
+                    </div>
+                    <div class="main__block4-cards-item-buttons row">
+                        <button type="button" class="button-yellow row-center">
+                            <img src="img/index/icon-user.svg" alt="Image" class="img24">
+                            <span class="font500 black">Для себя</span>
+                        </button>
+                        <button type="button" class="button-pink row-center">
+                            <img src="img/index/icon-present-white.svg" alt="Image" class="img24">
+                            <span class="font500 white">В подарок</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="main__block4-cards-item col">
+                    <div class="main__block4-cards-item-image">
+                        <div>
+                            <img src="img/index/slider4.png" alt="Image" class="block4-card-slide4">
+                            <img src="img/index/slider5.png" alt="Image" class="block4-card-slide4 hidden">
+                            <img src="img/index/slider6.png" alt="Image" class="block4-card-slide4 hidden">
+                            <img src="img/index/slider3.png" alt="Image" class="block4-card-slide4 hidden">
+                            <img src="img/index/slider1.png" alt="Image" class="block4-card-slide4 hidden">
+                            <img src="img/index/slider2.png" alt="Image" class="block4-card-slide4 hidden">
+                            <img src="img/index/slider3.png" alt="Image" class="block4-card-slide4 hidden">
+                        </div>
+                        <input type="checkbox" name="n_main__block4-cards-item-image-favorite-4"
+                            id="main__block4-cards-item-image-favorite-4"
+                            class="main__block4-cards-item-image-favorite hidden">
+                        <label for="main__block4-cards-item-image-favorite-4">
+                            <img src="img/index/icon-favorite.svg" alt="Image" class="img24">
+                            <img src="img/index/icon-favorite-pink.svg" alt="Image" class="img24 hidden">
+                        </label>
+                        <button type="button" class="main__block4-cards-item-image-sl-left hidden"
+                            onclick="previousSlide4()">
+                            <img src="img/index/icon-slider-left.svg" alt="Image" class="img-default slider-left">
+                            <img src="img/index/icon-slider-left-hover.svg" alt="Image" class="img-hover slider-left">
+                            <img src="img/index/icon-slider-left-active.svg" alt="Image" class="img-active slider-left">
+                        </button>
+                        <button type="button" class="main__block4-cards-item-image-sl-right hidden"
+                            onclick="nextSlide4()">
+                            <img src="img/index/icon-slider-right.svg" alt="Image" class="img-default slider-right">
+                            <img src="img/index/icon-slider-right-hover.svg" alt="Image" class="img-hover slider-right">
+                            <img src="img/index/icon-slider-right-active.svg" alt="Image"
+                                class="img-active slider-right">
+                        </button>
+                        <div class="main__block4-cards-item-image-points row">
+                            <div class="block4-card-point4"></div>
+                            <div class="block4-card-point4"></div>
+                            <div class="block4-card-point4"></div>
+                            <div class="block4-card-point4"></div>
+                            <div class="block4-card-point4"></div>
+                            <div class="block4-card-point4"></div>
+                            <div class="block4-card-point4"></div>
+                        </div>
+                    </div>
+                    <div class="main__block4-cards-item-text col">
+                        <div class="font500 black">Винный безлимит в ресторане Fridays</div>
+                        <div class="main__block4-cards-item-rating-mobile row-center hidden">
+                            <div class="main__block4-cards-item-rating-stars row-center">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                            </div>
+                            <a href="#" class="font300 black">20 отзывов</a>
+                        </div>
+                        <div class="font300 grey">Сомелье поделится традициями бельгийского пивоварения и научит
+                            основным пивным стилям. Вечер дополнит сет закусок от ресторана, специально подобранных к
+                            каждому напитку</div>
+                    </div>
+                    <div class="row-center jcsb">
+                        <div class="main__block4-cards-item-rating-desktop row-center">
+                            <div class="main__block4-cards-item-rating-stars row-center">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                            </div>
+                            <a href="#" class="font300 black link">20 отзывов</a>
+                        </div>
+                        <div class="main__block4-cards-item-price row-center">
+                            <div class="font500 black">от</div>
+                            <span class="font700 black">59</span>
+                            <div class="font500 black">до</div>
+                            <span class="font700 black">118</span>
+                            <div class="font500 black">руб.</div>
+                        </div>
+                    </div>
+                    <div class="main__block4-cards-item-buttons row">
+                        <button type="button" class="button-yellow row-center">
+                            <img src="img/index/icon-user.svg" alt="Image" class="img24">
+                            <span class="font500 black">Для себя</span>
+                        </button>
+                        <button type="button" class="button-pink row-center">
+                            <img src="img/index/icon-present-white.svg" alt="Image" class="img24">
+                            <span class="font500 white">В подарок</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="main__block4-cards-item col">
+                    <div class="main__block4-cards-item-image">
+                        <div>
+                            <img src="img/index/slider5.png" alt="Image" class="block4-card-slide5">
+                            <img src="img/index/slider6.png" alt="Image" class="block4-card-slide5 hidden">
+                            <img src="img/index/slider3.png" alt="Image" class="block4-card-slide5 hidden">
+                            <img src="img/index/slider1.png" alt="Image" class="block4-card-slide5 hidden">
+                            <img src="img/index/slider2.png" alt="Image" class="block4-card-slide5 hidden">
+                            <img src="img/index/slider3.png" alt="Image" class="block4-card-slide5 hidden">
+                            <img src="img/index/slider4.png" alt="Image" class="block4-card-slide5 hidden">
+                        </div>
+                        <input type="checkbox" name="n_main__block4-cards-item-image-favorite-5"
+                            id="main__block4-cards-item-image-favorite-5"
+                            class="main__block4-cards-item-image-favorite hidden">
+                        <label for="main__block4-cards-item-image-favorite-5">
+                            <img src="img/index/icon-favorite.svg" alt="Image" class="img24">
+                            <img src="img/index/icon-favorite-pink.svg" alt="Image" class="img24 hidden">
+                        </label>
+                        <button type="button" class="main__block4-cards-item-image-sl-left hidden"
+                            onclick="previousSlide5()">
+                            <img src="img/index/icon-slider-left.svg" alt="Image" class="img-default slider-left">
+                            <img src="img/index/icon-slider-left-hover.svg" alt="Image" class="img-hover slider-left">
+                            <img src="img/index/icon-slider-left-active.svg" alt="Image" class="img-active slider-left">
+                        </button>
+                        <button type="button" class="main__block4-cards-item-image-sl-right hidden"
+                            onclick="nextSlide5()">
+                            <img src="img/index/icon-slider-right.svg" alt="Image" class="img-default slider-right">
+                            <img src="img/index/icon-slider-right-hover.svg" alt="Image" class="img-hover slider-right">
+                            <img src="img/index/icon-slider-right-active.svg" alt="Image"
+                                class="img-active slider-right">
+                        </button>
+                        <div class="main__block4-cards-item-image-points row">
+                            <div class="block4-card-point5"></div>
+                            <div class="block4-card-point5"></div>
+                            <div class="block4-card-point5"></div>
+                            <div class="block4-card-point5"></div>
+                            <div class="block4-card-point5"></div>
+                            <div class="block4-card-point5"></div>
+                            <div class="block4-card-point5"></div>
+                        </div>
+                    </div>
+                    <div class="main__block4-cards-item-text col">
+                        <div class="font500 black">Винный безлимит в ресторане Fridays</div>
+                        <div class="main__block4-cards-item-rating-mobile row-center hidden">
+                            <div class="main__block4-cards-item-rating-stars row-center">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                            </div>
+                            <a href="#" class="font300 black">20 отзывов</a>
+                        </div>
+                        <div class="font300 grey">Сомелье поделится традициями бельгийского пивоварения и научит
+                            основным пивным стилям. Вечер дополнит сет закусок от ресторана, специально подобранных к
+                            каждому напитку</div>
+                    </div>
+                    <div class="row-center jcsb">
+                        <div class="main__block4-cards-item-rating-desktop row-center">
+                            <div class="main__block4-cards-item-rating-stars row-center">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                            </div>
+                            <a href="#" class="font300 black link">20 отзывов</a>
+                        </div>
+                        <div class="main__block4-cards-item-price row-center">
+                            <div class="font500 black">от</div>
+                            <span class="font700 black">59</span>
+                            <div class="font500 black">до</div>
+                            <span class="font700 black">118</span>
+                            <div class="font500 black">руб.</div>
+                        </div>
+                    </div>
+                    <div class="main__block4-cards-item-buttons row">
+                        <button type="button" class="button-yellow row-center">
+                            <img src="img/index/icon-user.svg" alt="Image" class="img24">
+                            <span class="font500 black">Для себя</span>
+                        </button>
+                        <button type="button" class="button-pink row-center">
+                            <img src="img/index/icon-present-white.svg" alt="Image" class="img24">
+                            <span class="font500 white">В подарок</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="main__block4-cards-item col">
+                    <div class="main__block4-cards-item-image">
+                        <div>
+                            <img src="img/index/slider6.png" alt="Image" class="block4-card-slide6">
+                            <img src="img/index/slider3.png" alt="Image" class="block4-card-slide6 hidden">
+                            <img src="img/index/slider1.png" alt="Image" class="block4-card-slide6 hidden">
+                            <img src="img/index/slider2.png" alt="Image" class="block4-card-slide6 hidden">
+                            <img src="img/index/slider3.png" alt="Image" class="block4-card-slide6 hidden">
+                            <img src="img/index/slider4.png" alt="Image" class="block4-card-slide6 hidden">
+                            <img src="img/index/slider5.png" alt="Image" class="block4-card-slide6 hidden">
+                        </div>
+                        <input type="checkbox" name="n_main__block4-cards-item-image-favorite-6"
+                            id="main__block4-cards-item-image-favorite-6"
+                            class="main__block4-cards-item-image-favorite hidden">
+                        <label for="main__block4-cards-item-image-favorite-6">
+                            <img src="img/index/icon-favorite.svg" alt="Image" class="img24">
+                            <img src="img/index/icon-favorite-pink.svg" alt="Image" class="img24 hidden">
+                        </label>
+                        <button type="button" class="main__block4-cards-item-image-sl-left hidden"
+                            onclick="previousSlide6()">
+                            <img src="img/index/icon-slider-left.svg" alt="Image" class="img-default slider-left">
+                            <img src="img/index/icon-slider-left-hover.svg" alt="Image" class="img-hover slider-left">
+                            <img src="img/index/icon-slider-left-active.svg" alt="Image" class="img-active slider-left">
+                        </button>
+                        <button type="button" class="main__block4-cards-item-image-sl-right hidden"
+                            onclick="nextSlide6()">
+                            <img src="img/index/icon-slider-right.svg" alt="Image" class="img-default slider-right">
+                            <img src="img/index/icon-slider-right-hover.svg" alt="Image" class="img-hover slider-right">
+                            <img src="img/index/icon-slider-right-active.svg" alt="Image"
+                                class="img-active slider-right">
+                        </button>
+                        <div class="main__block4-cards-item-image-points row">
+                            <div class="block4-card-point6"></div>
+                            <div class="block4-card-point6"></div>
+                            <div class="block4-card-point6"></div>
+                            <div class="block4-card-point6"></div>
+                            <div class="block4-card-point6"></div>
+                            <div class="block4-card-point6"></div>
+                            <div class="block4-card-point6"></div>
+                        </div>
+                    </div>
+                    <div class="main__block4-cards-item-text col">
+                        <div class="font500 black">Винный безлимит в ресторане Fridays</div>
+                        <div class="main__block4-cards-item-rating-mobile row-center hidden">
+                            <div class="main__block4-cards-item-rating-stars row-center">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                            </div>
+                            <a href="#" class="font300 black">20 отзывов</a>
+                        </div>
+                        <div class="font300 grey">Сомелье поделится традициями бельгийского пивоварения и научит
+                            основным пивным стилям. Вечер дополнит сет закусок от ресторана, специально подобранных к
+                            каждому напитку</div>
+                    </div>
+                    <div class="row-center jcsb">
+                        <div class="main__block4-cards-item-rating-desktop row-center">
+                            <div class="main__block4-cards-item-rating-stars row-center">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                            </div>
+                            <a href="#" class="font300 black link">20 отзывов</a>
+                        </div>
+                        <div class="main__block4-cards-item-price row-center">
+                            <div class="font500 black">от</div>
+                            <span class="font700 black">59</span>
+                            <div class="font500 black">до</div>
+                            <span class="font700 black">118</span>
+                            <div class="font500 black">руб.</div>
+                        </div>
+                    </div>
+                    <div class="main__block4-cards-item-buttons row">
+                        <button type="button" class="button-yellow row-center">
+                            <img src="img/index/icon-user.svg" alt="Image" class="img24">
+                            <span class="font500 black">Для себя</span>
+                        </button>
+                        <button type="button" class="button-pink row-center">
+                            <img src="img/index/icon-present-white.svg" alt="Image" class="img24">
+                            <span class="font500 white">В подарок</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="link-see-all link-green font700 green">Посмотреть еще</a>
+        </div>
+        <div class="main__call-to-action">
+            <img src="img/index/background.png" alt="Image" class="main__call-to-action-img-1">
+            <img src="img/index/background-mobile.png" alt="Image" class="main__call-to-action-img-2 hidden">
+            <div class="main__call-to-action-container">
+                <div class="container row-center jcsb">
+                    <div class="font500 black">Нужна помощь в подборе подарка?</div>
+                    <button type="button" class="button-pink font500 white">Написать</button>
+                </div>
+            </div>
+        </div>
+        <div class="main__block5 container col">
+            <div class="main__block5-title font500 black">Отзывы</div>
+            <div class="main__block5-review row">
+                <div class="main__block5-review-item col">
+                    <div class="main__block5-review-item-title col">
+                        <div class="main__block5-review-item-title-name row jcsb">
+                            <div class="font700 black">Екатерина</div>
+                            <div class="font300 grey">04.07.2022</div>
+                        </div>
+                        <div class="stars">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                            <div class="font700 black">5.0</div>
+                        </div>
+                        <a href="#" class="main__block5-review-item-title-link font300 black link">Дрифтомания — дрифт
+                            на спортивном авто</a>
+                    </div>
+                    <div class="font300 grey">Для тех кто любит автоспорт и дрифт в
+                        частности. Рекомендую однозначно! Помимо самих навыков получите ещё и массу положительных эмоций
+                        в перемешку с адреналином! Было круто, спасибо!</div>
+                </div>
+                <div class="main__block5-review-item col">
+                    <div class="main__block5-review-item-title col">
+                        <div class="main__block5-review-item-title-name row jcsb">
+                            <div class="font700 black">Екатерина</div>
+                            <div class="font300 grey">04.07.2022</div>
+                        </div>
+                        <div class="stars">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                            <div class="font700 black">5.0</div>
+                        </div>
+                        <a href="#" class="main__block5-review-item-title-link font300 black link">Худи, платья,
+                            свитшоты и костюмы от LIMI: авторские вышивки и яркие цвета</a>
+                    </div>
+                    <div class="font300 grey">Вообще я не любитель такого стиля,
+                        преимущественно спортивного, но! купила платье оранжевое - это просто песня! После стирки как
+                        новое, гладить
+                        <input type="radio" name="n_main__block5-review-item-text-1"
+                            id="main__block5-review-item-text-1" class="main__block5-review-item-text-input hidden">
+                        <label for="main__block5-review-item-text-1">
+                            <span>
+                                <span class="font300 grey">...</span>
+                                <span class="font300 black link">Подробнее</span>
+                            </span>
+                            <span class="font300 grey hidden">не надо</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="main__block5-review-item col">
+                    <div class="main__block5-review-item-title col">
+                        <div class="main__block5-review-item-title-name row jcsb">
+                            <div class="font700 black">Екатерина</div>
+                            <div class="font300 grey">04.07.2022</div>
+                        </div>
+                        <div class="stars">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                            <div class="font700 black">5.0</div>
+                        </div>
+                        <a href="#" class="main__block5-review-item-title-link font300 black link">Дрифтомания — дрифт
+                            на спортивном авто</a>
+                    </div>
+                    <div class="font300 grey">Не в восторге! вообще ничего не поняли,
+                        сертификат был на одни круг плюс фото, 1-ое: вариантов выбрать фото предложено не было, по этому
+                        с ухмылкой а не с улыбкой, будет лежать
+                        <input type="radio" name="n_main__block5-review-item-text-2"
+                            id="main__block5-review-item-text-2" class="main__block5-review-item-text-input hidden">
+                        <label for="main__block5-review-item-text-2">
+                            <span>
+                                <span class="font300 grey">...</span>
+                                <span class="font300 black link">Подробнее</span>
+                            </span>
+                            <span class="font300 grey hidden">пылиться в конверте</span>
+                        </label>
+                    </div>
+                </div>
+                <button type="button" class="main__block5-sl-left hidden">
+                    <img src="img/index/icon-slider-left.svg" alt="Image" class="img56 img-default slider-left">
+                    <img src="img/index/icon-slider-left-hover.svg" alt="Image" class="img56 img-hover slider-left">
+                    <img src="img/index/icon-slider-left-active.svg" alt="Image" class="img56 img-active slider-left">
+                </button>
+                <button type="button" class="main__block5-sl-right hidden">
+                    <img src="img/index/icon-slider-right.svg" alt="Image" class="img56 img-default slider-right">
+                    <img src="img/index/icon-slider-right-hover.svg" alt="Image" class="img56 img-hover slider-right">
+                    <img src="img/index/icon-slider-right-active.svg" alt="Image" class="img56 img-active slider-right">
+                </button>
+            </div>
+            <div class="scroll-opacity hidden"></div>
+            <a href="#" class="link-see-all link-green font700 green">Посмотреть еще</a>
+        </div>
+        <div class="main__block6 col">
+            <div class="main__block6-title font500 black">Блог</div>
+            <div class="main__block6-blog row">
+                <a href="#" class="main__block6-blog-item col">
+                    <img src="img/index/blog-image.png" alt="Image">
+                    <div class="main__block6-blog-item-date col">
+                        <div class="font500 white">04</div>
+                        <div class="font500 white">Июля</div>
+                        <div class="font500 white">2022</div>
+                    </div>
+                    <div class="main__block6-blog-item-text col">
+                        <div class="font500 black">Винный безлимит в ресторане Fridays</div>
+                        <div class="font300 grey">Сомелье поделится традициями бельгийского пивоварения и научит
+                            основным пивным стилям.</div>
+                    </div>
+                </a>
+                <a href="#" class="main__block6-blog-item col">
+                    <img src="img/index/blog-image.png" alt="Image">
+                    <div class="main__block6-blog-item-date col">
+                        <div class="font500 white">04</div>
+                        <div class="font500 white">Июля</div>
+                        <div class="font500 white">2022</div>
+                    </div>
+                    <div class="main__block6-blog-item-text col">
+                        <div class="font500 black">Винный безлимит в ресторане Fridays</div>
+                        <div class="font300 grey">Сомелье поделится традициями бельгийского пивоварения и научит
+                            основным пивным стилям.</div>
+                    </div>
+                </a>
+                <a href="#" class="main__block6-blog-item col">
+                    <img src="img/index/blog-image.png" alt="Image">
+                    <div class="main__block6-blog-item-date col">
+                        <div class="font500 white">04</div>
+                        <div class="font500 white">Июля</div>
+                        <div class="font500 white">2022</div>
+                    </div>
+                    <div class="main__block6-blog-item-text col">
+                        <div class="font500 black">Винный безлимит в ресторане Fridays</div>
+                        <div class="font300 grey">Сомелье поделится традициями бельгийского пивоварения и научит
+                            основным пивным стилям.</div>
+                    </div>
+                </a>
+                <button type="button" class="main__block6-sl-left hidden">
+                    <img src="img/index/icon-slider-left.svg" alt="Image" class="img56 img-default slider-left">
+                    <img src="img/index/icon-slider-left-hover.svg" alt="Image" class="img56 img-hover slider-left">
+                    <img src="img/index/icon-slider-left-active.svg" alt="Image" class="img56 img-active slider-left">
+                </button>
+                <button type="button" class="main__block6-sl-right hidden">
+                    <img src="img/index/icon-slider-right.svg" alt="Image" class="img56 img-default slider-right">
+                    <img src="img/index/icon-slider-right-hover.svg" alt="Image" class="img56 img-hover slider-right">
+                    <img src="img/index/icon-slider-right-active.svg" alt="Image" class="img56 img-active slider-right">
+                </button>
+            </div>
+            <div class="scroll-opacity hidden"></div>
+            <a href="#" class="link-see-all link-green font700 green">Посмотреть еще</a>
+        </div>
+        <div class="main__block7 container col">
+            <div class="main__block7-title font500 black">Подарочные сертификаты в Минске</div>
+            <div class="main__block7-text row">
+                <div class="main__block7-text-left col">
+                    <div>
+                        <span class="font700 black">Surprise.by</span>
+                        <span class="font500 black"> — это сервис подарочных сертификатов и «лавка» впечатлений в
+                            одном флаконе</span>
+                    </div>
+                    <div class="font300 grey">Вы можете выбрать в нашем каталоге полезные и приятные подарки для
+                        близких, друзей, коллег и партнеров и «приложить» их к любому поводу — будь-то день рождения,
+                        годовщина или просто в качестве изящного комплимента. Для этого мы находимся в постоянном поиске
+                        интересных услуг и мониторим классные новинки. Все это — для вас!</div>
+                </div>
+                <div class="main__block7-text-right col">
+                    <div class="main__block7-text-right-item col">
+                        <input type="checkbox" name="n_main__block7-text-right-item-1"
+                            id="main__block7-text-right-item-1" class="main__block7-text-right-item-input hidden"
+                            checked>
+                        <label for="main__block7-text-right-item-1" class="main__block7-text-right-item-label row link">
+                            <img src="img/index/icon-dropdown.svg" alt="Image" class="img24 img-default">
+                            <img src="img/index/icon-dropdown-hover.svg" alt="Image" class="img24 img-hover">
+                            <img src="img/index/icon-dropdown-active.svg" alt="Image" class="img24 img-active">
+                            <img src="img/index/icon-dropup-hover.svg" alt="Image" class="img24 hidden">
+                            <span class="font500 black">Подарочные сертификаты — оригинальные подарки для всей
+                                семьи!</span>
+                        </label>
+                        <div class="main__block7-text-right-item-text font300 grey hidden">Не желаете быть заурядными
+                            и хотите вручить своим близким или друзьям на день рождения, Восьмое марта, Новый год,
+                            совершеннолетие, юбилей, День Святого Валентина по-настоящему оригинальные подарки или
+                            просто порадовать любимого человека чем-то незабываемым? Не знаете, где приобрести в Минске
+                            креативные подарки и сувениры? Интернет-магазины подарков, в Минске которых становится все
+                            больше и больше, — это отличная возможность использовать свою фантазию, чтобы подарить
+                            виновнику торжества самые незабываемые эмоции и впечатления!</div>
+                    </div>
+                    <div class="main__block7-text-right-item col">
+                        <input type="checkbox" name="n_main__block7-text-right-item-2"
+                            id="main__block7-text-right-item-2" class="main__block7-text-right-item-input hidden">
+                        <label for="main__block7-text-right-item-2" class="main__block7-text-right-item-label row link">
+                            <img src="img/index/icon-dropdown.svg" alt="Image" class="img24 img-default">
+                            <img src="img/index/icon-dropdown-hover.svg" alt="Image" class="img24 img-hover">
+                            <img src="img/index/icon-dropdown-active.svg" alt="Image" class="img24 img-active">
+                            <img src="img/index/icon-dropup-hover.svg" alt="Image" class="img24 hidden">
+                            <span class="font500 black">Интернет-магазин необычных подарков в Минске: интересные идеи
+                                рождаются у нас!</span>
+                        </label>
+                        <div class="main__block7-text-right-item-text font300 grey hidden">Не желаете быть заурядными
+                            и хотите вручить своим близким или друзьям на день рождения, Восьмое марта, Новый год,
+                            совершеннолетие, юбилей, День Святого Валентина по-настоящему оригинальные подарки или
+                            просто порадовать любимого человека чем-то незабываемым? Не знаете, где приобрести в Минске
+                            креативные подарки и сувениры? Интернет-магазины подарков, в Минске которых становится все
+                            больше и больше, — это отличная возможность использовать свою фантазию, чтобы подарить
+                            виновнику торжества самые незабываемые эмоции и впечатления!</div>
+                    </div>
+                    <div class="main__block7-text-right-item col">
+                        <input type="checkbox" name="n_main__block7-text-right-item-3"
+                            id="main__block7-text-right-item-3" class="main__block7-text-right-item-input hidden">
+                        <label for="main__block7-text-right-item-3" class="main__block7-text-right-item-label row link">
+                            <img src="img/index/icon-dropdown.svg" alt="Image" class="img24 img-default">
+                            <img src="img/index/icon-dropdown-hover.svg" alt="Image" class="img24 img-hover">
+                            <img src="img/index/icon-dropdown-active.svg" alt="Image" class="img24 img-active">
+                            <img src="img/index/icon-dropup-hover.svg" alt="Image" class="img24 hidden">
+                            <span class="font500 black">Подарочные сертификаты — оригинальные подарки для всей
+                                семьи!</span>
+                        </label>
+                        <div class="main__block7-text-right-item-text font300 grey hidden">Не желаете быть заурядными
+                            и хотите вручить своим близким или друзьям на день рождения, Восьмое марта, Новый год,
+                            совершеннолетие, юбилей, День Святого Валентина по-настоящему оригинальные подарки или
+                            просто порадовать любимого человека чем-то незабываемым? Не знаете, где приобрести в Минске
+                            креативные подарки и сувениры? Интернет-магазины подарков, в Минске которых становится все
+                            больше и больше, — это отличная возможность использовать свою фантазию, чтобы подарить
+                            виновнику торжества самые незабываемые эмоции и впечатления!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__call-to-action">
+            <img src="img/index/background.png" alt="Image" class="main__call-to-action-img-1">
+            <img src="img/index/background-mobile.png" alt="Image" class="main__call-to-action-img-2 hidden">
+            <div class="main__call-to-action-container">
+                <div class="container row-center jcsb">
+                    <div class="font500 black">Нужна помощь в подборе подарка?</div>
+                    <button type="button" class="button-pink font500 white">Написать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer container row jcsb">
+        <div class="footer__col1 col">
+            <a href="index.html">
+                <img src="img/index/logo.svg" alt="Image" class="footer__col1-img">
+            </a>
+            <div class="footer__col1-links row">
+                <a href="#">
+                    <img src="img/index/icon-tiktok.svg" alt="Image" class="img56 img-default">
+                    <img src="img/index/icon-tiktok-hover.svg" alt="Image" class="img56 img-hover">
+                    <img src="img/index/icon-tiktok-active.svg" alt="Image" class="img56 img-active">
+                </a>
+                <a href="#">
+                    <img src="img/index/icon-insta.svg" alt="Image" class="img56 img-default">
+                    <img src="img/index/icon-insta-hover.svg" alt="Image" class="img56 img-hover">
+                    <img src="img/index/icon-insta-active.svg" alt="Image" class="img56 img-active">
+                </a>
+                <a href="#">
+                    <img src="img/index/icon-facebook.svg" alt="Image" class="img56 img-default">
+                    <img src="img/index/icon-facebook-hover.svg" alt="Image" class="img56 img-hover">
+                    <img src="img/index/icon-facebook-active.svg" alt="Image" class="img56 img-active">
+                </a>
+            </div>
+            <div class="footer__col4-adress col hidden">
+                <div>
+                    <div class="font300 grey">Республика Беларусь, 220004</div>
+                    <div class="font300 grey">г. Минск, ул. Раковская, 18</div>
+                    <div class="font300 grey">Время работы: 09:00-20:00,</div>
+                    <div class="font300 grey">без выходных</div>
+                </div>
+                <div>
+                    <div class="font500 black">Островок:</div>
+                    <div class="font300 grey">ТЦ Green City, Притыцкого, 156</div>
+                    <div class="font300 grey">(1-й этаж, возле магазина «КРАВТ»)</div>
+                    <div class="font300 grey">Время работы: 10:00-22:00,</div>
+                    <div class="font300 grey">без выходных</div>
+                </div>
+                <div>
+                    <div class="font500 black">Островок:</div>
+                    <div class="font300 grey">ТЦ Dana Mall, Петра Мстиславца, 11</div>
+                    <div class="font300 grey">(2-й этаж, возле Stradivarius)</div>
+                    <div class="font300 grey">Время работы: 10:00-22:00,</div>
+                    <div class="font300 grey">без выходных</div>
+                </div>
+            </div>
+            <div class="footer__col1-info col">
+                <div class="footer__col1-info-register col">
+                    <div class="font300 grey">ООО «Приятный сюрприз»</div>
+                    <div class="font300 grey">УНП: 191685808</div>
+                    <div class="font300 grey">регистрация в ЕГР 31.08.2011,<br>Мингорисполком</div>
+                    <div class="font300 grey">© Все права защищены, 2022</div>
+                </div>
+                <div class="footer__col1-info-rating col">
+                    <div class="font500 black">Рейтинг: 5</div>
+                    <div class="font300 grey">На основе 98 отзывов</div>
+                    <div class="stars">
+                        <img src="img/index/star.svg" alt="Image" class="star">
+                        <img src="img/index/star.svg" alt="Image" class="star">
+                        <img src="img/index/star.svg" alt="Image" class="star">
+                        <img src="img/index/star.svg" alt="Image" class="star">
+                        <img src="img/index/star.svg" alt="Image" class="star">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__col2 col">
+            <div class="footer__col2-title font500 black">МЕНЮ</div>
+            <div class="footer__col2-links col">
+                <a href="#" class="font300 black link">О нас</a>
+                <a href="#" class="font300 black link">Отзывы</a>
+                <a href="#" class="font300 black link">Блог</a>
+                <a href="#" class="font300 black link">Вакансии</a>
+                <a href="#" class="font300 black link">Наши партнеры</a>
+                <a href="#" class="font300 black link">Доставка и оплата</a>
+                <a href="#" class="font300 black link">Корпоративным клиентам</a>
+                <a href="#" class="font300 black link">Публичный договор</a>
+            </div>
+        </div>
+        <div class="footer__col3 col">
+            <div class="footer__col3-title font500 black">КАТАЛОГ</div>
+            <div class="footer__col3-links col">
+                <a href="#" class="font300 black link">Новый Год</a>
+                <a href="#" class="font300 black link">14 февраля</a>
+                <a href="#" class="font300 black link">23 февраля</a>
+                <a href="#" class="font300 black link">8 марта</a>
+                <a href="#" class="font300 black link">День рождения</a>
+                <a href="#" class="font300 black link">Годовщина свадьбы</a>
+            </div>
+        </div>
+        <div class="footer__col4 col">
+            <div class="footer__col4-title font500 black">АДРЕСА</div>
+            <div class="footer__col4-adress col">
+                <div>
+                    <div class="font300 grey">Республика Беларусь, 220004</div>
+                    <div class="font300 grey">г. Минск, ул. Раковская, 18</div>
+                    <div class="font300 grey">Время работы: 09:00-20:00,</div>
+                    <div class="font300 grey">без выходных</div>
+                </div>
+                <div>
+                    <div class="font500 black">Островок:</div>
+                    <div class="font300 grey">ТЦ Green City, Притыцкого, 156</div>
+                    <div class="font300 grey">(1-й этаж, возле магазина «КРАВТ»)</div>
+                    <div class="font300 grey">Время работы: 10:00-22:00,</div>
+                    <div class="font300 grey">без выходных</div>
+                </div>
+                <div>
+                    <div class="font500 black">Островок:</div>
+                    <div class="font300 grey">ТЦ Dana Mall, Петра Мстиславца, 11</div>
+                    <div class="font300 grey">(2-й этаж, возле Stradivarius)</div>
+                    <div class="font300 grey">Время работы: 10:00-22:00,</div>
+                    <div class="font300 grey">без выходных</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__col5 col jcsb">
+            <div class="footer__col5-info col">
+                <div class="footer__col5-info-title font500 black">КОНТАКТЫ</div>
+                <div class="footer__col5-info-numbers col">
+                    <a href="tel:+375297333368" class="footer__col5-info-numbers-item row-center link">
+                        <img src="img/index/icon-phone.svg" alt="Image" class="img24 img-default">
+                        <img src="img/index/icon-phone-hover.svg" alt="Image" class="img24 img-hover">
+                        <img src="img/index/icon-phone-active.svg" alt="Image" class="img24 img-active">
+                        <span class="font300 black">+375 29 7 3333 68 (MTC)</span>
+                    </a>
+                    <a href="tel:+375297333368" class="footer__col5-info-numbers-item row-center link">
+                        <img src="img/index/icon-phone.svg" alt="Image" class="img24 img-default">
+                        <img src="img/index/icon-phone-hover.svg" alt="Image" class="img24 img-hover">
+                        <img src="img/index/icon-phone-active.svg" alt="Image" class="img24 img-active">
+                        <span class="font300 black">+375 29 7 3333 68 (А1)</span>
+                    </a>
+                    <a href="tel:+375297333368" class="footer__col5-info-numbers-item row-center link">
+                        <img src="img/index/icon-phone.svg" alt="Image" class="img24 img-default">
+                        <img src="img/index/icon-phone-hover.svg" alt="Image" class="img24 img-hover">
+                        <img src="img/index/icon-phone-active.svg" alt="Image" class="img24 img-active">
+                        <span class="font300 black">+375 29 7 3333 68 (Life)</span>
+                    </a>
+                    <a href="mailto:info@surprise.by" class="footer__col5-info-numbers-item row-center link">
+                        <img src="img/index/icon-mail.svg" alt="Image" class="img24 img-default">
+                        <img src="img/index/icon-mail-hover.svg" alt="Image" class="img24 img-hover">
+                        <img src="img/index/icon-mail-active.svg" alt="Image" class="img24 img-active">
+                        <span class="font300 black">info@surprise.by</span>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="footer__col5-button button-pink font500 white">Активировать сертификат</a>
+        </div>
+    </div>
+    <div class="footer__cards row">
+        <img src="img/index/footer-card1.png" alt="Image">
+        <img src="img/index/footer-card2.png" alt="Image">
+        <img src="img/index/footer-card3.png" alt="Image">
+        <img src="img/index/footer-card4.png" alt="Image">
+        <img src="img/index/footer-card5.png" alt="Image">
+        <img src="img/index/footer-card6.png" alt="Image">
+        <img src="img/index/footer-card7.png" alt="Image">
+        <img src="img/index/footer-card8.png" alt="Image">
+    </div>
+    <div class="popup-header-menu hidden" id="popup-header-menu">
+        <div class="popup-header-menu-back"></div>
+        <div class="popup-header-menu-content col">
+            <div class="popup-header-menu-content-links col">
+                <a href="#" class="font500 black link">Спа, красота, здоровье</a>
+                <a href="#" class="font500 black link">Полеты</a>
+                <a href="#" class="font500 black link">Бары и рестораны</a>
+                <a href="#" class="font500 black link">Романтические подарки</a>
+                <a href="#" class="font500 black link">Мастер-классы и обучение</a>
+                <a href="#" class="font500 black link">Подарочные карты магазинов</a>
+                <a href="#" class="font500 black link">Свидания и вечеринки</a>
+                <a href="#" class="font500 black link">Квесты</a>
+                <a href="#" class="font500 black link">Активный отдых</a>
+                <a href="#" class="font500 black link">На День Рождения</a>
+            </div>
+            <div class="popup-header-menu-content-line"></div>
+            <div class="popup-header-menu-content-icons col">
+                <a href="#" class="popup-header-menu-content-icons-item link row-center">
+                    <img src="img/index/popup-menu-icon1.svg" alt="Image" class="img56">
+                    <div class="col">
+                        <span class="font500 black">Универсальный сертификат</span>
+                        <span class="font300 grey">Сертификат на сумму</span>
+                    </div>
+                </a>
+                <a href="#" class="popup-header-menu-content-icons-item link row-center">
+                    <img src="img/index/popup-menu-icon2.svg" alt="Image" class="img56">
+                    <div class="col">
+                        <span class="font500 black">Комбо</span>
+                        <span class="font300 grey">2 впечатления в 1</span>
+                    </div>
+                </a>
+                <a href="#" class="popup-header-menu-content-icons-item link row-center">
+                    <img src="img/index/popup-menu-icon3.svg" alt="Image" class="img56">
+                    <div class="col">
+                        <span class="font500 black">Наборы</span>
+                        <span class="font300 grey">Сертификат на выбор</span>
+                    </div>
+                </a>
+            </div>
+            <button type="button" class="popup-header-menu-content-close-icon" onclick="closeMenu()">
+                <img src="img/index/icon-clean-black.svg" alt="Image" class="img24 img-default">
+                <img src="img/index/icon-clean.svg" alt="Image" class="img24 img-hover">
+                <img src="img/index/icon-clean-active.svg" alt="Image" class="img24 img-active">
+            </button>
+        </div>
+    </div>
+    <div class="popup-header-menu-mobile col hidden" id="popup-header-menu-mobile">
+        <div class="popup-header-menu-mobile-div1 col">
+            <a href="#" class="popup-header-menu-mobile-div1-button font500 white button-pink">Активировать
+                сертификат</a>
+            <div class="popup-header-menu-mobile-div1-links col">
+                <div class="popup-header-menu-mobile-div1-links-1 col">
+                    <a href="#" class="font500 black link">Спа, красота, здоровье</a>
+                    <a href="#" class="font500 black link">Полеты</a>
+                    <a href="#" class="font500 black link">Бары и рестораны</a>
+                    <a href="#" class="font500 black link">Романтические подарки</a>
+                    <a href="#" class="font500 black link">Мастер-классы и обучение</a>
+                    <a href="#" class="font500 black link">Подарочные карты магазинов</a>
+                    <a href="#" class="font500 black link">Свидания и вечеринки</a>
+                    <a href="#" class="font500 black link">Квесты</a>
+                    <a href="#" class="font500 black link">Активный отдых</a>
+                    <a href="#" class="font500 black link">На День Рождения</a>
+                </div>
+                <div class="popup-header-menu-mobile-div1-links-line"></div>
+                <div class="popup-header-menu-mobile-div1-links-2 col">
+                    <a href="#" class="popup-header-menu-mobile-div1-links-2-item link row-center">
+                        <img src="img/index/popup-menu-icon1.svg" alt="Image" class="img56">
+                        <div class="col">
+                            <span class="font500 black">Универсальный сертификат</span>
+                            <span class="font300 grey">Сертификат на сумму</span>
+                        </div>
+                    </a>
+                    <a href="#" class="popup-header-menu-mobile-div1-links-2-item link row-center">
+                        <img src="img/index/popup-menu-icon2.svg" alt="Image" class="img56">
+                        <div class="col">
+                            <span class="font500 black">Комбо</span>
+                            <span class="font300 grey">2 впечатления в 1</span>
+                        </div>
+                    </a>
+                    <a href="#" class="popup-header-menu-mobile-div1-links-2-item link row-center">
+                        <img src="img/index/popup-menu-icon3.svg" alt="Image" class="img56">
+                        <div class="col">
+                            <span class="font500 black">Наборы</span>
+                            <span class="font300 grey">Сертификат на выбор</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="popup-header-menu-mobile-div2 col">
+            <a href="#" class="font500 black link">Новинки</a>
+            <a href="#" class="font500 black link">Где купить</a>
+            <a href="#" class="font500 black link">Доставка и оплата</a>
+            <a href="#" class="font500 black link">Корпоративные подарки</a>
+            <a href="#" class="font500 black link">Стать нашим партнером</a>
+        </div>
+        <div class="popup-header-menu-mobile-div3 col">
+            <a href="tel:+375297333368" class="popup-header-menu-mobile-div3-link row-center link">
+                <img src="img/index/icon-phone.svg" alt="Image" class="img24 img-default">
+                <img src="img/index/icon-phone-hover.svg" alt="Image" class="img24 img-hover">
+                <img src="img/index/icon-phone-active.svg" alt="Image" class="img24 img-active">
+                <span class="font300 black">+375 29 7 3333 68 (MTC)</span>
+            </a>
+            <div class="popup-header-menu-mobile-div3-link row-center">
+                <img src="img/index/icon-clock.svg" alt="Image" class="img24">
+                <span class="font300 black">с 09:00 до 22:00, Без выходных</span>
+            </div>
+            <div class="popup-header-menu-mobile-div3-social row">
+                <a href="#">
+                    <img src="img/index/icon-tiktok.svg" alt="Image" class="img56 img-default">
+                    <img src="img/index/icon-tiktok-hover.svg" alt="Image" class="img56 img-hover">
+                    <img src="img/index/icon-tiktok-active.svg" alt="Image" class="img56 img-active">
+                </a>
+                <a href="#">
+                    <img src="img/index/icon-insta.svg" alt="Image" class="img56 img-default">
+                    <img src="img/index/icon-insta-hover.svg" alt="Image" class="img56 img-hover">
+                    <img src="img/index/icon-insta-active.svg" alt="Image" class="img56 img-active">
+                </a>
+                <a href="#">
+                    <img src="img/index/icon-facebook.svg" alt="Image" class="img56 img-default">
+                    <img src="img/index/icon-facebook-hover.svg" alt="Image" class="img56 img-hover">
+                    <img src="img/index/icon-facebook-active.svg" alt="Image" class="img56 img-active">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="js/header.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

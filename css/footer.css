@@ -1,0 +1,152 @@
+.footer {
+    margin-bottom: 60px;
+    gap: 16px;
+}
+
+.footer__col1 {
+    gap: 51px;
+}
+
+.footer__col1-img {
+    width: 238px;
+    height: 32px;
+}
+
+.footer__col1-links {
+    gap: 28px;
+}
+
+.footer__col1-info {
+    gap: 32px;
+}
+
+.footer__col1-info-register {
+    gap: 8px;
+}
+
+.footer__col1-info-rating {
+    gap: 4px;
+}
+
+.footer__col2 {
+    gap: 32px;
+}
+
+.footer__col2-title {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.footer__col2-links {
+    gap: 16px;
+}
+
+.footer__col3 {
+    gap: 32px;
+}
+
+.footer__col3-title {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.footer__col3-links {
+    gap: 16px;
+}
+
+.footer__col4 {
+    gap: 32px;
+}
+
+.footer__col4-title {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.footer__col4-adress {
+    gap: 24px;
+}
+
+.footer__col5-info {
+    gap: 32px;
+}
+
+.footer__col5-info-title {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.footer__col5-info-numbers {
+    gap: 24px;
+}
+
+.footer__col5-info-numbers-item {
+    gap: 12px;
+}
+
+.footer__col5-button {
+    padding: 18px 32px;
+}
+
+.footer__cards {
+    background: #F6F6F6;
+    padding: 12px 0px;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1472px) {
+    .footer {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .footer__col5 {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+    }
+
+    .footer__col1 {
+        gap: 32px;
+        align-items: center;
+    }
+
+    .footer__col1 div {
+        text-align: center;
+    }
+
+    .footer__col1-img {
+        width: 214px;
+        height: 28px;
+    }
+
+    .footer__col1>.footer__col4-adress {
+        display: flex;
+    }
+
+    .footer__col1-info-rating {
+        align-items: center;
+    }
+
+    .footer__col2-title {
+        display: none;
+    }
+
+    .footer__col2-links {
+        align-items: center;
+    }
+
+    .footer__col3,
+    .footer__col4 {
+        display: none;
+    }
+}

@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/product1.css">
+    <link rel="stylesheet" href="css/temp.css">
+    <title>Product1</title>
+</head>
+
+<body id="body">
+    <div class="title container col">
+        <div class="title__breadcramps row-center">
+            <a href="#" class="title__breadcramps-item row-center link">
+                <span class="font500 black">Главная</span>
+                <img src="img/product1/icon-right.svg" alt="Image" class="img24 img-default">
+                <img src="img/product1/icon-right-hover.svg" alt="Image" class="img24 img-hover">
+                <img src="img/product1/icon-right-active.svg" alt="Image" class="img24 img-active">
+            </a>
+            <a href="#" class="title__breadcramps-item row-center link">
+                <span class="font500 black">Все сертификаты</span>
+                <img src="img/product1/icon-right.svg" alt="Image" class="img24 img-default">
+                <img src="img/product1/icon-right-hover.svg" alt="Image" class="img24 img-hover">
+                <img src="img/product1/icon-right-active.svg" alt="Image" class="img24 img-active">
+            </a>
+            <div class="font300 black">Катание на квадроциклах</div>
+        </div>
+        <div class="title__subtitle font500 black">Катание на квадроциклах в группе</div>
+        <div class="title__rating row-center">
+            <div class="title__rating-stars row-center">
+                <div class="title__rating-stars-div1 font700 black">5.0</div>
+                <div class="stars">
+                    <img src="img/index/star.svg" alt="Image" class="star">
+                    <img src="img/index/star.svg" alt="Image" class="star">
+                    <img src="img/index/star.svg" alt="Image" class="star">
+                    <img src="img/index/star.svg" alt="Image" class="star">
+                    <img src="img/index/star.svg" alt="Image" class="star">
+                </div>
+            </div>
+            <a href="#" class="title__rating-review font300 black link">20 отзывов</a>
+        </div>
+    </div>
+    <div class="gallery container row">
+        <div class="gallery__video">
+            <video src="#" poster="img/product1/gallery-video.png"></video>
+            <div class="gallery__video-icon row-center">
+                <button type="button">
+                    <img src="img/product1/icon-play-video.svg" alt="Image">
+                </button>
+            </div>
+        </div>
+        <div class="gallery__images">
+            <img src="img/product1/gallery-image1.png" alt="Image">
+            <img src="img/product1/gallery-image2.png" alt="Image">
+            <img src="img/product1/gallery-image3.png" alt="Image">
+            <img src="img/product1/gallery-image4.png" alt="Image">
+            <img src="img/product1/gallery-image5.png" alt="Image">
+            <img src="img/product1/gallery-image6.png" alt="Image">
+        </div>
+    </div>
+    <div class="tab container row">
+        <input type="radio" name="n_tab-button" id="tab-button1" class="tab__input hidden" checked>
+        <label for="tab-button1" class="tab__button row-center" onclick="showPresent()">
+            <img src="img/product1/tab.svg" alt="Image" class="img24">
+            <img src="img/product1/tab-hover.svg" alt="Image" class="img24 hidden">
+            <img src="img/product1/tab-checked.svg" alt="Image" class="img24 hidden">
+            <span class="font500 grey">В подарок</span>
+        </label>
+        <input type="radio" name="n_tab-button" id="tab-button2" class="tab__input hidden">
+        <label for="tab-button2" class="tab__button row-center" onclick="hidePresent()">
+            <img src="img/product1/tab.svg" alt="Image" class="img24">
+            <img src="img/product1/tab-hover.svg" alt="Image" class="img24 hidden">
+            <img src="img/product1/tab-checked.svg" alt="Image" class="img24 hidden">
+            <span class="font500 grey">Для себя</span>
+        </label>
+    </div>
+    <div class="product container row">
+        <div class="product__main col">
+            <div class="product__main-features col">
+                <div class="product__main-features-list">
+                    <div class="product__main-features-list-item row-center">
+                        <img src="img/product1/product-feature1.svg" alt="Image" class="img56">
+                        <span class="font300 black">Сертификат в уникальной упаковке</span>
+                    </div>
+                    <div class="product__main-features-list-item row-center">
+                        <img src="img/product1/product-feature2.svg" alt="Image" class="img56">
+                        <span class="font300 black">База — г. Минск, ул. Орловская, 78</span>
+                    </div>
+                    <div class="product__main-features-list-item row-center">
+                        <img src="img/product1/product-feature3.svg" alt="Image" class="img56">
+                        <span class="font300 black">1, 2 или 5 человек</span>
+                    </div>
+                    <div class="product__main-features-list-item row-center">
+                        <img src="img/product1/product-feature4.svg" alt="Image" class="img56">
+                        <span class="font300 black">2 часа</span>
+                    </div>
+                    <div class="product__main-features-list-item row-center">
+                        <img src="img/product1/product-feature5.svg" alt="Image" class="img56">
+                        <span class="font300 black">Каждый день при благоприятных погодных условиях.</span>
+                    </div>
+                    <div class="product__main-features-list-item row-center">
+                        <img src="img/product1/product-feature6.svg" alt="Image" class="img56">
+                        <span class="font300 black">3 месяца со дня покупки</span>
+                    </div>
+                    <div class="product__main-features-list-item row-center">
+                        <img src="img/product1/product-feature7.svg" alt="Image" class="img56">
+                        <span class="font300 black">Цена только за подарок без наценок и комиссий.</span>
+                    </div>
+                </div>
+                <div class="product__main-features-notifications col">
+                    <div class="product__main-features-notifications-title font700 black">Особенности</div>
+                    <div class="product__main-features-notifications-list col">
+                        <div class="product__main-features-notifications-list-item row-center">
+                            <img src="img/product1/check.svg" alt="Image" class="img24">
+                            <span class="font300 black">Необходимо иметь с собой паспорт.</span>
+                        </div>
+                        <div class="product__main-features-notifications-list-item row-center">
+                            <img src="img/product1/check.svg" alt="Image" class="img24">
+                            <span class="font300 black">Отмена записи не менее, чем за 12 часов.</span>
+                        </div>
+                        <div class="product__main-features-notifications-list-item row-center">
+                            <img src="img/product1/check.svg" alt="Image" class="img24">
+                            <span class="font300 black">Заезды не осуществляются в дождь и при температуре ниже минус 10
+                                градусов.</span>
+                        </div>
+                        <div class="product__main-features-notifications-list-item row-center">
+                            <img src="img/product1/check.svg" alt="Image" class="img24">
+                            <span class="font300 black">Необходимо иметь с собой паспорт.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product__main-description col">
+                <div class="product__main-description-title font500 black">Stand up paddle — крутой и безопасный водный
+                    спорт</div>
+                <div class="product__main-description-text col">
+                    <div class="font300 grey">Мечтаете опробовать свои силы в чем-то новом и обожаете активный отдых?
+                        Хочется охладиться в невыносимую жару? Тогда хватайте друзей и вторую половинку и становитесь
+                        вместе на SUP-борды — специальные доски для гребли стоя и длинные весла.</div>
+                    <div class="product__main-description-text-cards row">
+                        <div class="product__main-description-text-cards-item col">
+                            <img src="img/product1/product-description1.png" alt="Image">
+                            <div class="product__main-description-text-cards-item-text col">
+                                <div class="font500 black">Важно знать</div>
+                                <div class="col">
+                                    <div class="row">
+                                        <img src="img/product1/check.svg" alt="Image" class="img24">
+                                        <span class="font300 grey">Вы можете взять с собой сына или дочь старше 12 лет,
+                                            если готовы сопровождать их на SUP-борде.</span>
+                                    </div>
+                                    <div class="row">
+                                        <img src="img/product1/check.svg" alt="Image" class="img24">
+                                        <span class="font300 grey">Обязательно запишитесь заранее.</span>
+                                    </div>
+                                    <div class="row">
+                                        <img src="img/product1/check.svg" alt="Image" class="img24">
+                                        <span class="font300 grey">Кататься можно каждый день при благоприятных погодных
+                                            условиях.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="link-green font300 green">Подробнее</a>
+                        </div>
+                        <div class="product__main-description-text-cards-item col">
+                            <img src="img/product1/product-description2.png" alt="Image">
+                            <div class="product__main-description-text-cards-item-text col">
+                                <div class="font500 black">О безопасности</div>
+                                <div class="col">
+                                    <div class="row">
+                                        <img src="img/product1/check.svg" alt="Image" class="img24">
+                                        <span class="font300 grey">Спасательный жилет. Если не умеете плавать, жилет —
+                                            это ваша безопасность.</span>
+                                    </div>
+                                    <div class="row">
+                                        <img src="img/product1/check.svg" alt="Image" class="img24">
+                                        <span class="font300 grey">Защита кожи. Длительное пребывание на солнце может
+                                            быть опасно. Поэтому возьмите с собой солнцезащитный крем и очки.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="link-green font300 green">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="product__main-description-text-block col">
+                        <div class="product__main-description-text-block-title font500 black">Как проходит SUP-серфинг?
+                        </div>
+                        <div class="product__main-description-text-block-list col">
+                            <div class="product__main-description-text-block-list-item row">
+                                <img src="img/product1/check.svg" alt="Image" class="img24">
+                                <span class="font300 grey">Подробный инструктаж. Вам объяснят, как и что делать, как
+                                    держать равновесие и помогать кому-то, кто не может справиться или понять принцип
+                                    работы борда.</span>
+                            </div>
+                            <div class="product__main-description-text-block-list-item row">
+                                <img src="img/product1/check.svg" alt="Image" class="img24">
+                                <span class="font300 grey">Помощь инструктора. От Вас не отведут взгляд — в экстренных
+                                    ситуациях помощь прибудет незамедлительно.</span>
+                            </div>
+                            <div class="product__main-description-text-block-list-item row">
+                                <img src="img/product1/check.svg" alt="Image" class="img24">
+                                <span class="font300 grey">Крутые фото. Не забудьте свой go-pro и насниматйте
+                                    невероятных видов и сделайте смешные позитивные селфи.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__main-description-text-block col">
+                        <div class="product__main-description-text-block-title font500 black">Кому подойдет сертификат
+                            на SUP-серфинг в подарок?</div>
+                        <div class="product__main-description-text-block-list-wrapper col">
+                            <div class="product__main-description-text-block-list col">
+                                <div class="product__main-description-text-block-list-item row">
+                                    <img src="img/product1/check.svg" alt="Image" class="img24">
+                                    <span class="font300 grey">Второй половинке. Проведите пару часов наедине с любимым
+                                        человеком.</span>
+                                </div>
+                                <div class="product__main-description-text-block-list-item row">
+                                    <img src="img/product1/check.svg" alt="Image" class="img24">
+                                    <span class="font300 grey">Компании друзей. Собирайте всех и устраивайте
+                                        соревнования на бордах!</span>
+                                </div>
+                                <div class="product__main-description-text-block-list-item row">
+                                    <img src="img/product1/check.svg" alt="Image" class="img24">
+                                    <span class="font300 grey">Себе любимому. Не хабывайте баловать себя и наслаждаться
+                                        чудесным деньками и активным отдыхом!</span>
+                                </div>
+                            </div>
+                            <div class="font300 grey">Не бойтесь и покупайте подарочный сертификат Surprise.by — Вас
+                                всему научат, все покажут, каждый сможет встать на доску!</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="product__main-review col">
+                <div class="product__main-review-title font500 black">Отзывы</div>
+                <div class="row jcsb">
+                    <div class="product__main-review-rating-item row">
+                        <img src="img/product1/icon-rating.svg" alt="Image">
+                        <div class="product__main-review-rating-item-text col">
+                            <span class="font700 black">Атмосфера</span>
+                            <span class="font300 black">комфорт, уют</span>
+                        </div>
+                    </div>
+                    <div class="product__main-review-rating-item row">
+                        <img src="img/product1/icon-rating.svg" alt="Image">
+                        <div class="product__main-review-rating-item-text col">
+                            <span class="font700 black">Сервис</span>
+                            <span class="font300 black">гостепреимность, вежливость</span>
+                        </div>
+                    </div>
+                    <div class="product__main-review-rating-item row">
+                        <img src="img/product1/icon-rating.svg" alt="Image">
+                        <div class="product__main-review-rating-item-text col">
+                            <span class="font700 black">Услуга</span>
+                            <span class="font300 black">профессионализм, качество услуги</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__main-review-item col">
+                    <div class="col">
+                        <div class="row-center jcsb">
+                            <div class="product__main-review-item-name row-center">
+                                <span class="font700 black">Екатерина</span>
+                                <span class="font300 grey">04.07.2022</span>
+                            </div>
+                            <div class="product__main-review-item-tip row-center">
+                                <img src="img/product1/check-green.svg" alt="Image" class="img24">
+                                <span class="font500 green">Отзыв подтвержден</span>
+                            </div>
+                        </div>
+                        <div class="product__main-review-item-rating row-center">
+                            <div class="stars">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                            </div>
+                            <div class="product__main-review-item-rating-text font700 black">5.0</div>
+                        </div>
+                        <div class="font300 grey">Ходили с друзьями, очень понравилось. Оказалось легче, чем я думала.
+                            Каталась впервые и со всем справилась, рекомендую</div>
+                    </div>
+                    <div class="product__main-review-item-reaction row-center">
+                        <img src="img/product1/icon-reaction1.png" alt="Image" class="img-fire">
+                        <img src="img/product1/icon-reaction2.png" alt="Image" class="img24">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row-center jcsb">
+                        <div class="product__main-review-item-name row-center">
+                            <span class="font700 black">Yana</span>
+                            <span class="font300 grey">04.07.2022</span>
+                        </div>
+                        <div class="product__main-review-item-tip row-center">
+                            <img src="img/product1/check-green.svg" alt="Image" class="img24">
+                            <span class="font500 green">Отзыв подтвержден</span>
+                        </div>
+                    </div>
+                    <div class="product__main-review-item-rating row-center">
+                        <div class="stars">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                            <img src="img/index/star.svg" alt="Image" class="star">
+                        </div>
+                        <div class="product__main-review-item-rating-text font700 black">5.0</div>
+                    </div>
+                    <div class="font300 grey">Крутое летнее развлечение! и хорошая физическая нагрузка. Остались очень
+                        довольны. Заряд энергии обеспечен</div>
+                </div>
+                <a href="#" class="link-see-all link-green font700 green">Посмотреть еще</a>
+            </div>
+        </div>
+        <div class="product__choose col">
+            <div class="product__choose-steps col">
+                <div class="product__choose-steps-road col">
+                    <div class="product__choose-steps-road-title font500 black">1. Выбери трассу</div>
+                    <div class="product__choose-steps-road-buttons row">
+                        <input type="radio" name="n_product__choose-steps-road-button"
+                            id="product__choose-steps-road-button-1"
+                            class="product__choose-steps-road-button-input hidden" checked>
+                        <label for="product__choose-steps-road-button-1"
+                            class="product__choose-steps-road-button-label font500 black">
+                            10 км
+                        </label>
+                        <input type="radio" name="n_product__choose-steps-road-button"
+                            id="product__choose-steps-road-button-2"
+                            class="product__choose-steps-road-button-input hidden">
+                        <label for="product__choose-steps-road-button-2"
+                            class="product__choose-steps-road-button-label font500 black">
+                            14 км
+                        </label>
+                        <input type="radio" name="n_product__choose-steps-road-button"
+                            id="product__choose-steps-road-button-3"
+                            class="product__choose-steps-road-button-input hidden">
+                        <label for="product__choose-steps-road-button-3"
+                            class="product__choose-steps-road-button-label font500 black">
+                            25 км
+                        </label>
+                    </div>
+                </div>
+                <div class="product__choose-steps-people col">
+                    <div class="product__choose-steps-people-title font500 black">2. Выбери количество человек</div>
+                    <div class="product__choose-steps-people-buttons row">
+                        <input type="radio" name="n_product__choose-steps-people-button"
+                            id="product__choose-steps-people-button-1"
+                            class="product__choose-steps-people-button-input hidden" checked>
+                        <label for="product__choose-steps-people-button-1"
+                            class="product__choose-steps-people-button-label font500 black">
+                            1
+                        </label>
+                        <input type="radio" name="n_product__choose-steps-people-button"
+                            id="product__choose-steps-people-button-2"
+                            class="product__choose-steps-people-button-input hidden">
+                        <label for="product__choose-steps-people-button-2"
+                            class="product__choose-steps-people-button-label font500 black">
+                            2
+                        </label>
+                        <input type="radio" name="n_product__choose-steps-people-button"
+                            id="product__choose-steps-people-button-3"
+                            class="product__choose-steps-people-button-input hidden">
+                        <label for="product__choose-steps-people-button-3"
+                            class="product__choose-steps-people-button-label font500 black">
+                            3
+                        </label>
+                        <input type="radio" name="n_product__choose-steps-people-button"
+                            id="product__choose-steps-people-button-4"
+                            class="product__choose-steps-people-button-input hidden">
+                        <label for="product__choose-steps-people-button-4"
+                            class="product__choose-steps-people-button-label font500 black">
+                            4
+                        </label>
+                        <input type="radio" name="n_product__choose-steps-people-button"
+                            id="product__choose-steps-people-button-5"
+                            class="product__choose-steps-people-button-input hidden">
+                        <label for="product__choose-steps-people-button-5"
+                            class="product__choose-steps-people-button-label font500 black">
+                            5
+                        </label>
+                    </div>
+                </div>
+                <div class="product__choose-steps-car col">
+                    <div class="product__choose-steps-car-title font500 black">3. Выбери машину</div>
+                    <div>
+                        <input type="checkbox" name="n_product__choose-steps-car-field"
+                            id="product__choose-steps-car-field" class="product__choose-steps-car-field-input hidden">
+                        <label for="product__choose-steps-car-field"
+                            class="product__choose-steps-car-field-label row-center jcsb link">
+                            <span class="col">
+                                <span class="font500 black">2 машины, 2-местные</span>
+                                <span class="product__choose-steps-car-field-label-span font300 grey">(400-500
+                                    см3)</span>
+                            </span>
+                            <span class="product__choose-steps-car-field-label-price row-center">
+                                <span class="font500 black">180 руб.</span>
+                                <img src="img/index/icon-dropdown.svg" alt="Image" class="img24 img-default">
+                                <img src="img/index/icon-dropdown-hover.svg" alt="Image" class="img24 img-hover">
+                                <img src="img/index/icon-dropdown-active.svg" alt="Image" class="img24 img-active">
+                                <img src="img/index/icon-dropup-hover.svg" alt="Image" class="img24 hidden img-up">
+                            </span>
+                        </label>
+                        <div class="product__choose-steps-car-dropmenu col hidden">
+                            <input type="radio" name="n_product__choose-steps-car-dropmenu"
+                                id="product__choose-steps-car-dropmenu-1" class="hidden">
+                            <label for="product__choose-steps-car-dropmenu-1" class="row-center jcsb link"
+                                onclick="hideMenu()">
+                                <span class="col">
+                                    <span class="font500 black">2 машины, 2-местные</span>
+                                    <span class="product__choose-steps-car-field-label-span font300 grey">(400-500
+                                        см3)</span>
+                                </span>
+                                <span class="font500 black">180 руб.</span>
+                            </label>
+                            <input type="radio" name="n_product__choose-steps-car-dropmenu"
+                                id="product__choose-steps-car-dropmenu-2" class="hidden">
+                            <label for="product__choose-steps-car-dropmenu-2" class="row-center jcsb link"
+                                onclick="hideMenu()">
+                                <span class="col">
+                                    <span class="font500 black">2 машины, 2-местные</span>
+                                    <span class="product__choose-steps-car-field-label-span font300 grey">(400-500
+                                        см3)</span>
+                                </span>
+                                <span class="font500 black">180 руб.</span>
+                            </label>
+                            <input type="radio" name="n_product__choose-steps-car-dropmenu"
+                                id="product__choose-steps-car-dropmenu-3" class="hidden">
+                            <label for="product__choose-steps-car-dropmenu-3" class="row-center jcsb link"
+                                onclick="hideMenu()">
+                                <span class="col">
+                                    <span class="font500 black">2 машины, 2-местные</span>
+                                    <span class="product__choose-steps-car-field-label-span font300 grey">(400-500
+                                        см3)</span>
+                                </span>
+                                <span class="font500 black">180 руб.</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product__choose-box col" id="product__choose-box">
+                <div class="product__choose-box-radio col">
+                    <div class="product__choose-box-radio-title font500 black">4. Выбери упаковку</div>
+                    <input type="radio" name="n_product__choose-box-radio" id="product__choose-box-radio-1"
+                        class="product__choose-box-radio-input hidden" checked>
+                    <label for="product__choose-box-radio-1" class="product__choose-box-radio-label row-center link">
+                        <img src="img/product1/icon-radio-button.svg" alt="Image" class="img24 img1">
+                        <img src="img/product1/icon-radio-button-hover.svg" alt="Image" class="img24 hidden img2">
+                        <img src="img/product1/icon-radio-button-active.svg" alt="Image" class="img24 hidden img3">
+                        <span class="font300 span1">Коробка —</span>
+                        <span class="font500 black span2">9 руб.</span>
+                    </label>
+                    <div class="product__choose-box-radio-img hidden">
+                        <img src="img/product1/present.png" alt="Image">
+                    </div>
+                    <input type="radio" name="n_product__choose-box-radio" id="product__choose-box-radio-2"
+                        class="product__choose-box-radio-input hidden">
+                    <label for="product__choose-box-radio-2" class="product__choose-box-radio-label row-center link">
+                        <img src="img/product1/icon-radio-button.svg" alt="Image" class="img24 img1">
+                        <img src="img/product1/icon-radio-button-hover.svg" alt="Image" class="img24 hidden img2">
+                        <img src="img/product1/icon-radio-button-active.svg" alt="Image" class="img24 hidden img3">
+                        <span class="font300 span1">Конверт —</span>
+                        <span class="font500 black span2">3 руб.</span>
+                    </label>
+                    <div class="product__choose-box-radio-img hidden">
+                        <img src="img/product1/present.png" alt="Image">
+                    </div>
+                    <input type="radio" name="n_product__choose-box-radio" id="product__choose-box-radio-3"
+                        class="product__choose-box-radio-input hidden">
+                    <label for="product__choose-box-radio-3" class="product__choose-box-radio-label row-center link">
+                        <img src="img/product1/icon-radio-button.svg" alt="Image" class="img24 img1">
+                        <img src="img/product1/icon-radio-button-hover.svg" alt="Image" class="img24 hidden img2">
+                        <img src="img/product1/icon-radio-button-active.svg" alt="Image" class="img24 hidden img3">
+                        <span class="font300 span1">Электронный сертификат —</span>
+                        <span class="font500 black span2">Бесплатно</span>
+                    </label>
+                    <div class="product__choose-box-radio-img hidden">
+                        <img src="img/product1/present.png" alt="Image">
+                    </div>
+                </div>
+                <div class="product__choose-box-color col">
+                    <div class="product__choose-box-color-title font500 black">Выбери цвет упаковки</div>
+                    <div class="product__choose-box-color-items row">
+                        <input type="radio" name="n_product__choose-box-color-item"
+                            id="product__choose-box-color-item-1" class="product__choose-box-color-item-input hidden">
+                        <label for="product__choose-box-color-item-1" class="product__choose-box-color-item-1"></label>
+                        <input type="radio" name="n_product__choose-box-color-item"
+                            id="product__choose-box-color-item-2" class="product__choose-box-color-item-input hidden">
+                        <label for="product__choose-box-color-item-2" class="product__choose-box-color-item-2"></label>
+                        <input type="radio" name="n_product__choose-box-color-item"
+                            id="product__choose-box-color-item-3" class="product__choose-box-color-item-input hidden">
+                        <label for="product__choose-box-color-item-3" class="product__choose-box-color-item-3"></label>
+                        <input type="radio" name="n_product__choose-box-color-item"
+                            id="product__choose-box-color-item-4" class="product__choose-box-color-item-input hidden">
+                        <label for="product__choose-box-color-item-4" class="product__choose-box-color-item-4"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="product__choose-price row-center">
+                <span class="font700 black">Итого:&nbsp;&nbsp;&nbsp;</span>
+                <span class="font700 green">1709 руб.</span>
+            </div>
+            <button type="button" class="product__choose-button button-pink font500 white">Купить</button>
+        </div>
+    </div>
+    <div class="info container col">
+        <div class="info__block1 col">
+            <div class="info__block1-title font500 black">Как это работает</div>
+            <div class="info__block1-steps row">
+                <div class="info__block1-steps-item col">
+                    <div class="info__block1-steps-item-img row-center">
+                        <img src="img/index/block2-image1.svg" alt="Image" class="img56">
+                        <div class="info__block1-steps-item-line"></div>
+                    </div>
+                    <div class="info__block1-steps-item-title font700 black">Выбираем лучших</div>
+                    <div class="info__block1-steps-item-text font300 grey">Тщательно выбираем партнеров и услуги. Не
+                        работаем с кем попало, гарантируем качество своей репутацией</div>
+                </div>
+                <div class="info__block1-steps-item col">
+                    <div class="info__block1-steps-item-img row-center">
+                        <img src="img/index/block2-image2.svg" alt="Image" class="img56">
+                        <div class="info__block1-steps-item-line"></div>
+                    </div>
+                    <div class="info__block1-steps-item-title font700 black">Создаем уникальные впечатления</div>
+                    <div class="info__block1-steps-item-text font300 grey">Обожаешь пробовать новое? Каждую неделю
+                        разрабатываем новое уникальное впечатление</div>
+                </div>
+                <div class="info__block1-steps-item col">
+                    <div class="info__block1-steps-item-img row-center">
+                        <img src="img/index/block2-image3.svg" alt="Image" class="img56">
+                        <div class="info__block1-steps-item-line"></div>
+                    </div>
+                    <div class="info__block1-steps-item-title font700 black">Тестируем до начала продаж</div>
+                    <div class="info__block1-steps-item-text font300 grey">В каталоге нет услуг, которые бы не проверили
+                        до начала работы. Мы убедились - вам понравится!
+                    </div>
+                </div>
+                <div class="info__block1-steps-item-last col">
+                    <img src="img/index/block2-image4.svg" alt="Image" class="img56">
+                    <div class="info__block1-steps-item-title font700 black">Собираем честные отзывы</div>
+                    <div class="font300 grey">Удаляем из каталога услуги, которые не
+                        соответствуют уровню клиентского сервиса surprise</div>
+                </div>
+            </div>
+        </div>
+        <div class="info__block2 col">
+            <div class="info__block2-title font500 black">Доставка</div>
+            <div class="info__block2-delivery row">
+                <div class="info__block2-delivery-item col">
+                    <img src="img/product1/icon-delivery1.svg" alt="Image" class="info__block2-delivery-item-img img56">
+                    <span class="info__block2-delivery-item-text1 font500 black">Электронный сертификат</span>
+                    <span class="font300 grey">3 минуты</span>
+                    <span class="info__block2-delivery-item-text2 font500">Бесплатно</span>
+                </div>
+                <div class="info__block2-delivery-line"></div>
+                <div class="info__block2-delivery-item col">
+                    <img src="img/product1/icon-delivery2.svg" alt="Image" class="info__block2-delivery-item-img img56">
+                    <span class="info__block2-delivery-item-text1 font500 black">Доставка почтой (по РБ)</span>
+                    <span class="font300 grey">3-5 дней</span>
+                    <span class="info__block2-delivery-item-text2 font500">9 руб</span>
+                </div>
+                <div class="info__block2-delivery-line"></div>
+                <div class="info__block2-delivery-item col">
+                    <img src="img/product1/icon-delivery3.svg" alt="Image" class="info__block2-delivery-item-img img56">
+                    <span class="info__block2-delivery-item-text1 font500 black">Доставка курьером (по Минску)</span>
+                    <span class="font300 grey">с 10:00 до 15:00 и с 15:00 до 20:00</span>
+                    <span class="info__block2-delivery-item-text2 font500">6 руб</span>
+                </div>
+                <div class="info__block2-delivery-line"></div>
+                <div class="info__block2-delivery-item col">
+                    <img src="img/product1/icon-delivery4.svg" alt="Image" class="info__block2-delivery-item-img img56">
+                    <span class="info__block2-delivery-item-text1 font500 black">Самовывоз</span>
+                    <span class="font300 grey">Комфортное для вас время</span>
+                    <span class="info__block2-delivery-item-text2 font500">Бесплатно</span>
+                </div>
+            </div>
+            <a href="#" class="link-see-all link-green font700 green">Читать больше</a>
+        </div>
+        <div class="info__block3 col">
+            <div class="info__block3-title font500 black">Сравни с похожими предложениями!</div>
+            <div class="info__block3-table">
+                <div class="border"></div>
+                <div class="border box col">
+                    <img src="img/index/slider1.png" alt="Image">
+                    <div class="box-text col">
+                        <div class="font500 black">HUMAN: мастер-класс по лепке тела из керамики</div>
+                        <div class="rating row-center">
+                            <div class="stars">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                            </div>
+                            <a href="#" class="font300 black link">20 отзывов</a>
+                        </div>
+                        <div class="price row-center">
+                            <span class="font300 black">от</span>
+                            <span class="numbers font700 black">59</span>
+                            <span class="font300 black">до</span>
+                            <span class="numbers font700 black">118</span>
+                            <span class="font300 black">руб.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="border box col">
+                    <img src="img/index/slider2.png" alt="Image">
+                    <div class="box-text col">
+                        <div class="font500 black">HUMAN: мастер-класс по лепке тела из керамики</div>
+                        <div class="rating row-center">
+                            <div class="stars">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                            </div>
+                            <a href="#" class="font300 black link">20 отзывов</a>
+                        </div>
+                        <div class="price row-center">
+                            <span class="font300 black">от</span>
+                            <span class="numbers font700 black">59</span>
+                            <span class="font300 black">до</span>
+                            <span class="numbers font700 black">118</span>
+                            <span class="font300 black">руб.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box col">
+                    <img src="img/index/slider3.png" alt="Image">
+                    <div class="box-text col">
+                        <div class="font500 black">HUMAN: мастер-класс по лепке тела из керамики</div>
+                        <div class="rating row-center">
+                            <div class="stars">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                                <img src="img/index/star.svg" alt="Image" class="star">
+                            </div>
+                            <a href="#" class="font300 black link">20 отзывов</a>
+                        </div>
+                        <div class="price row-center">
+                            <span class="font300 black">от</span>
+                            <span class="numbers font700 black">59</span>
+                            <span class="font300 black">до</span>
+                            <span class="numbers font700 black">118</span>
+                            <span class="font300 black">руб.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="border back text font500 black">Медитативные / Расслабляющие</div>
+                <div class="border back img">
+                    <img src="img/product1/icon-table.svg" alt="Image">
+                </div>
+                <div class="border back img">
+                    <img src="img/product1/icon-table.svg" alt="Image">
+                </div>
+                <div class="back"></div>
+                <div class="border text font500 black">Требующую вовлеченности</div>
+                <div class="border img">
+                    <img src="img/product1/icon-table.svg" alt="Image">
+                </div>
+                <div class="border"></div>
+                <div class="img">
+                    <img src="img/product1/icon-table.svg" alt="Image">
+                </div>
+                <div class="border back text font500 black">Атмосферные</div>
+                <div class="border back img">
+                    <img src="img/product1/icon-table.svg" alt="Image">
+                </div>
+                <div class="border back img">
+                    <img src="img/product1/icon-table.svg" alt="Image">
+                </div>
+                <div class="back img">
+                    <img src="img/product1/icon-table.svg" alt="Image">
+                </div>
+                <div class="border text font500 black">Кулинарные</div>
+                <div class="border"></div>
+                <div class="border"></div>
+                <div></div>
+                <div class="border back text font500 black">Творческий</div>
+                <div class="border back img">
+                    <img src="img/product1/icon-table.svg" alt="Image">
+                </div>
+                <div class="border back img">
+                    <img src="img/product1/icon-table.svg" alt="Image">
+                </div>
+                <div class="back img">
+                    <img src="img/product1/icon-table.svg" alt="Image">
+                </div>
+                <div class="border text font500 black">Кропотливые</div>
+                <div class="border"></div>
+                <div class="border"></div>
+                <div></div>
+                <div class="border back text font500 black border-radius1">Активные</div>
+                <div class="border back"></div>
+                <div class="border back"></div>
+                <div class="back border-radius2"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="info__block4-col1 col">
+                <div>
+                    <div class="info__block4-col1-title font500 black">Остались вопросы ?</div>
+                    <div class="info__block4-col1-title font500 black">У нас есть ответы на них!</div>
+                </div>
+                <div class="info__block4-col1-info col">
+                    <div class="info__block4-col1-info-item col">
+                        <input type="checkbox" name="n_info__block4-col1-info-item-1" id="info__block4-col1-info-item-1"
+                            class="info__block4-col1-info-item-input hidden" checked>
+                        <label for="info__block4-col1-info-item-1"
+                            class="info__block4-col1-info-item-label row-center link">
+                            <img src="img/index/icon-dropdown.svg" alt="Image" class="img24 img-default">
+                            <img src="img/index/icon-dropdown-hover.svg" alt="Image" class="img24 img-hover">
+                            <img src="img/index/icon-dropdown-active.svg" alt="Image" class="img24 img-active">
+                            <img src="img/index/icon-dropup-hover.svg" alt="Image" class="img24 hidden">
+                            <span class="font500 black">Как оформить заказ?</span>
+                        </label>
+                        <div class="info__block4-col1-info-item-text font300 grey hidden">Вы можете оформить
+                            сертификат по телефону +375(44) 7 3333 68, в онлайн чате на сайте или в корзине
+                            самостоятельно. Выбирайте нужный вариант впечатления или услуги, кнопка "купить" перенесет
+                            вас в корзину. При необходимости, можно изменить количество позиций в заказе или вернуться в
+                            каталог и добавить в корзину другие сертификаты. Заполните необходимые поля, выберите
+                            упаковку, службу доставки и способ оплаты. На указанный email придет подтверждение заказа.
+                        </div>
+                    </div>
+                    <div class="info__block4-col1-info-item col">
+                        <input type="checkbox" name="n_info__block4-col1-info-item-2" id="info__block4-col1-info-item-2"
+                            class="info__block4-col1-info-item-input hidden">
+                        <label for="info__block4-col1-info-item-2"
+                            class="info__block4-col1-info-item-label row-center link">
+                            <img src="img/index/icon-dropdown.svg" alt="Image" class="img24 img-default">
+                            <img src="img/index/icon-dropdown-hover.svg" alt="Image" class="img24 img-hover">
+                            <img src="img/index/icon-dropdown-active.svg" alt="Image" class="img24 img-active">
+                            <img src="img/index/icon-dropup-hover.svg" alt="Image" class="img24 hidden">
+                            <span class="font500 black">Как активировать сертификат?</span>
+                        </label>
+                        <div class="info__block4-col1-info-item-text font300 grey hidden">Вы можете оформить
+                            сертификат по телефону +375(44) 7 3333 68, в онлайн чате на сайте или в корзине
+                            самостоятельно. Выбирайте нужный вариант впечатления или услуги, кнопка "купить" перенесет
+                            вас в корзину. При необходимости, можно изменить количество позиций в заказе или вернуться в
+                            каталог и добавить в корзину другие сертификаты. Заполните необходимые поля, выберите
+                            упаковку, службу доставки и способ оплаты. На указанный email придет подтверждение заказа.
+                        </div>
+                    </div>
+                    <div class="info__block4-col1-info-item col">
+                        <input type="checkbox" name="n_info__block4-col1-info-item-3" id="info__block4-col1-info-item-3"
+                            class="info__block4-col1-info-item-input hidden">
+                        <label for="info__block4-col1-info-item-3"
+                            class="info__block4-col1-info-item-label row-center link">
+                            <img src="img/index/icon-dropdown.svg" alt="Image" class="img24 img-default">
+                            <img src="img/index/icon-dropdown-hover.svg" alt="Image" class="img24 img-hover">
+                            <img src="img/index/icon-dropdown-active.svg" alt="Image" class="img24 img-active">
+                            <img src="img/index/icon-dropup-hover.svg" alt="Image" class="img24 hidden">
+                            <span class="font500 black">Сколько действует сертификат?</span>
+                        </label>
+                        <div class="info__block4-col1-info-item-text font300 grey hidden">Вы можете оформить
+                            сертификат по телефону +375(44) 7 3333 68, в онлайн чате на сайте или в корзине
+                            самостоятельно. Выбирайте нужный вариант впечатления или услуги, кнопка "купить" перенесет
+                            вас в корзину. При необходимости, можно изменить количество позиций в заказе или вернуться в
+                            каталог и добавить в корзину другие сертификаты. Заполните необходимые поля, выберите
+                            упаковку, службу доставки и способ оплаты. На указанный email придет подтверждение заказа.
+                        </div>
+                    </div>
+                    <div class="info__block4-col1-info-item col">
+                        <input type="checkbox" name="n_info__block4-col1-info-item-4" id="info__block4-col1-info-item-4"
+                            class="info__block4-col1-info-item-input hidden">
+                        <label for="info__block4-col1-info-item-4"
+                            class="info__block4-col1-info-item-label row-center link">
+                            <img src="img/index/icon-dropdown.svg" alt="Image" class="img24 img-default">
+                            <img src="img/index/icon-dropdown-hover.svg" alt="Image" class="img24 img-hover">
+                            <img src="img/index/icon-dropdown-active.svg" alt="Image" class="img24 img-active">
+                            <img src="img/index/icon-dropup-hover.svg" alt="Image" class="img24 hidden">
+                            <span class="font500 black">Что делать, если подарок не подошел?</span>
+                        </label>
+                        <div class="info__block4-col1-info-item-text font300 grey hidden">Вы можете оформить
+                            сертификат по телефону +375(44) 7 3333 68, в онлайн чате на сайте или в корзине
+                            самостоятельно. Выбирайте нужный вариант впечатления или услуги, кнопка "купить" перенесет
+                            вас в корзину. При необходимости, можно изменить количество позиций в заказе или вернуться в
+                            каталог и добавить в корзину другие сертификаты. Заполните необходимые поля, выберите
+                            упаковку, службу доставки и способ оплаты. На указанный email придет подтверждение заказа.
+                        </div>
+                    </div>
+                    <div class="info__block4-col1-info-item col">
+                        <input type="checkbox" name="n_info__block4-col1-info-item-5" id="info__block4-col1-info-item-5"
+                            class="info__block4-col1-info-item-input hidden">
+                        <label for="info__block4-col1-info-item-5"
+                            class="info__block4-col1-info-item-label row-center link">
+                            <img src="img/index/icon-dropdown.svg" alt="Image" class="img24 img-default">
+                            <img src="img/index/icon-dropdown-hover.svg" alt="Image" class="img24 img-hover">
+                            <img src="img/index/icon-dropdown-active.svg" alt="Image" class="img24 img-active">
+                            <img src="img/index/icon-dropup-hover.svg" alt="Image" class="img24 hidden">
+                            <span class="font500 black">Как купить сертификат в рассрочку?</span>
+                        </label>
+                        <div class="info__block4-col1-info-item-text font300 grey hidden">Вы можете оформить
+                            сертификат по телефону +375(44) 7 3333 68, в онлайн чате на сайте или в корзине
+                            самостоятельно. Выбирайте нужный вариант впечатления или услуги, кнопка "купить" перенесет
+                            вас в корзину. При необходимости, можно изменить количество позиций в заказе или вернуться в
+                            каталог и добавить в корзину другие сертификаты. Заполните необходимые поля, выберите
+                            упаковку, службу доставки и способ оплаты. На указанный email придет подтверждение заказа.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info__block4-col2">
+                <img src="img/product1/faq-image.png" alt="Image">
+            </div>
+        </div>
+    </div>
+    <script src="js/product1.js"></script>
+</body>
+
+</html>

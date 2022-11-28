@@ -1,0 +1,279 @@
+@font-face {
+    font-family: "Museo300";
+    src: url("../fonts/MuseoSansCyrl300.otf");
+}
+
+@font-face {
+    font-family: "Museo500";
+    src: url("../fonts/MuseoSansCyrl500.otf");
+}
+
+@font-face {
+    font-family: "Museo700";
+    src: url("../fonts/MuseoSansCyrl700.otf");
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: initial;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+button {
+    border: initial;
+    padding: initial;
+    background: initial;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+input {
+    border: initial;
+    padding: initial;
+    outline: initial;
+}
+
+.img24 {
+    width: 24px;
+    height: 24px;
+}
+
+.img56 {
+    width: 56px;
+    height: 56px;
+}
+
+.font300 {
+    font-family: "Museo300";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.font500 {
+    font-family: "Museo500";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.font700 {
+    font-family: "Museo700";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.black {
+    color: #1E1E1E;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+.grey {
+    color: #535353;
+}
+
+.green {
+    color: #258884;
+}
+
+.container {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+}
+
+.row-center {
+    display: flex;
+    align-items: center;
+}
+
+.jcsb {
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+.img-hover,
+.img-active {
+    display: none;
+}
+
+.button-yellow {
+    background-color: #EEF651;
+    border-radius: 8px;
+}
+
+.button-pink {
+    background-color: #F395A9;
+    border-radius: 8px;
+}
+
+.slider-left {
+    box-shadow: 0px 2px 10px rgba(145, 145, 145, 0.18);
+    border-radius: 50%;
+}
+
+button:active>.slider-left {
+    box-shadow: none;
+}
+
+.slider-right {
+    box-shadow: 0px 2px 10px rgba(31, 111, 108, 0.25);
+    border-radius: 50%;
+}
+
+button:active>.slider-right {
+    box-shadow: none;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.star {
+    width: 19px;
+    height: 18px;
+}
+
+.link-see-all {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4px;
+    font-size: 20px;
+    border-bottom: 1px solid #258884;
+}
+
+.scroll-opacity {
+    position: absolute;
+    opacity: 0.6;
+    background: linear-gradient(to right, transparent, #FFFFFF);
+    width: 20vw;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+@media (min-width: 769px) {
+
+    a:hover .img-default,
+    label:hover .img-default,
+    button:hover .img-default {
+        display: none;
+    }
+
+    a:hover .img-hover,
+    label:hover .img-hover,
+    button:hover .img-hover {
+        display: block;
+    }
+
+    a:active .img-default,
+    label:active .img-default,
+    button:active .img-default {
+        display: none;
+    }
+
+    a:active .img-hover,
+    label:active .img-hover,
+    button:active .img-hover {
+        display: none;
+    }
+
+    a:active .img-active,
+    label:active .img-active,
+    button:active .img-active {
+        display: block;
+    }
+
+    .link:hover,
+    .link:hover span {
+        color: #258884;
+    }
+
+    .link:active,
+    .link:active span {
+        color: #369A96;
+    }
+
+    .link-green:hover,
+    .link-green:hover span {
+        color: #1F6F6C;
+    }
+
+    .link-green:active,
+    .link-green:active span {
+        color: #369A96;
+    }
+
+    .button-yellow:hover {
+        background-color: #E4ED36;
+        box-shadow: 0px 2px 10px rgba(228, 236, 80, 0.25);
+    }
+
+    .button-yellow:active {
+        background-color: #F0F592;
+        box-shadow: none;
+    }
+
+    .button-pink:hover {
+        background-color: #E6859A;
+        box-shadow: 0px 2px 10px rgba(230, 133, 154, 0.25);
+    }
+
+    .button-pink:active {
+        background-color: #EDA2B2;
+        box-shadow: none;
+    }
+
+    .link-see-all:hover {
+        border-bottom: 1px solid #1F6F6C;
+    }
+
+    .link-see-all:active {
+        border-bottom: 1px solid #369A96;
+    }
+}
+
+@media (max-width: 1472px) {
+    .container {
+        width: 100%;
+        padding: 0px 16px 0px 16px;
+    }
+}

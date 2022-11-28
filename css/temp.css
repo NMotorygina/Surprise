@@ -1,0 +1,23 @@
+body {
+    padding-bottom: 100px;
+}
+
+@media (max-width: 1920px) {}
+
+@media (max-width: 1472px) {}/*gap*/
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}/*mobile*/
+
+@media (min-width: 769px) {}/*hover*/
+
+/*
+
+scrollbar-width: none;
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+*/
